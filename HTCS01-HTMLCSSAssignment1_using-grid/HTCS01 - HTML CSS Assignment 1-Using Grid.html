@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+      @font-face{
+        font-family: Proxima Nova ExtraBold;
+        src: url(Metropolis-ExtraBold.otf);
+      }
+
+      @font-face{
+        font-family: Proxima Nova Regular;
+        src: url(Metropolis-Regular.otf);
+      }
+
+      @font-face{
+        font-family: Proxima Nova Black;
+        src: url(Metropolis-Black.otf);
+      }    
+   
+        .container-grid{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 138px;
+        }
+        .child1{
+            display: grid;
+            grid-template-rows:50% 50%;
+            grid-gap:50px;
+        }
+        .A1{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-gap: 138px;
+            
+        }
+
+        .box1{
+            padding: 176px 0 0 176px;
+        }
+
+        .box2{
+            padding: 176px 169px 0 0;
+        }
+
+        .A2{
+            display: grid;
+            grid-template-columns: 50% 50% ;
+            grid-gap: 138px;
+        }
+
+        .box3{
+            padding: 65px 0 0 176px 
+        }
+
+        .box4{
+            padding: 53px 169px 0 0;
+        }
+
+        .child2{
+            padding-top: 284px;
+
+        }
+
+        .dot{
+            height: 102.52px;
+            width: 102.52px;
+            background-color: #E14B32;
+        
+            border-radius: 50%;
+            /* z-index: -1;
+             */
+            
+        }
+
+        .transparent{
+     font-size: 48px;
+     font-family: Proxima Nova,Black;
+     -webkit-text-stroke-width: 0.5px;
+     -webkit-text-stroke-color: black;
+     -webkit-text-fill-color: white;
+    }
+    </style>
+</head>
+<body>
+    <div class="container-grid">
+        <div class="child1">
+        <div class="A1">
+            <div class="box1">
+                <img src="Screenshot from 2022-07-26 16-59-58.png" alt="">
+                <p style="font-family:Proxima Nova ExtraBold;font-size: 18px;">AUTOMATIC SCALING</p>
+
+                <p style="font-family:Proxima Nova Regular;font-size: 18px;">Scale from zero to peak with automatic scalability & keep up with customer needs and expectations</p>
+
+            </div>
+
+            <div class="box2">
+                <img src="Screenshot from 2022-07-26 17-01-32.png" alt="">
+                <p style="font-family:Proxima Nova ExtraBold;font-size: 18px;">IMPROVED PRODUCTIVITY</p>
+
+                <p style="font-family:Proxima Nova Regular;font-size: 18px;">Eliminate operational overhead tasks to improve the efficiency of IT infrastructure teams by 80%</p>
+            </div>
+        
+        </div>
+        <div class="A2">
+            <div class="box3">
+                <img src="Screenshot from 2022-07-26 16-59-58.png" alt="">
+                <p style="font-family:Proxima Nova ExtraBold;font-size: 18px;">FASTER RELEASE CYCLES</p>
+
+                <p style="font-family:Proxima Nova Regular;font-size: 18px;">Ultra minimal infrastructure tasks to help you develop & deploy your product at lightning speed</p>
+            </div>
+
+            <div class="box4">
+                <img src="Screenshot from 2022-07-26 17-01-32.png" alt="">
+                <p style="font-family:Proxima Nova ExtraBold;font-size: 18px;">LOWER YOUR COST</p>
+
+                <p style="font-family:Proxima Nova Regular;font-size: 18px;">Save up to 90% on server cost with pay-as-you-go billing model and never pay for extra storage</p>
+            </div>
+        </div>
+        </div>
+        <div class="child2">
+            <div class="dot"></div>
+            <div style="margin:-120px 0 0 35px";><p style="font-size:48px;font-family:Proxima Nova Black">Why Serverless</p></div>
+            <div class="transparent" style="margin:-55px 0 0 35px"><p style="font-family:Proxima Nova Black">Web Development</p></div>
+            <div style="margin: 5px 0 0 35px;" ><p style="font-family:Proxima Nova Regular;font-size:14px;color:#3787C8;">(33% average higher developer productivity)***</p></div>
+        </div>
+    </div>
+</body>
+</html> 
