@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+     @font-face{
+        font-family: Proxima Nova Bold;
+        src: url(Metropolis-Bold.otf);
+      }
+
+      @font-face{
+        font-family: Proxima Nova Regular;
+        src: url(Metropolis-Regular.otf);
+      }
+
+      @font-face{
+        font-family: Proxima Nova Regular Italic;
+        src: url(Metropolis-RegularItalic.otf);
+      }
+
+        .container{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #555F64;
+        }
+
+        .item1{
+            height: 30%;
+            padding-left: 177.2px;
+            padding-top: 109px;
+        }
+
+        .dot{
+            height: 102.5px;
+            width: 102.5px;
+            border-radius: 50%;
+            background-color: #E14B32;
+
+        }
+
+        .transparent{
+     font-size: 48px;
+     font-family: Proxima Nova Bold,#555F64;
+     -webkit-text-stroke-width: 0.5px;
+     -webkit-text-stroke-color: white;
+     -webkit-text-fill-color: #555F64;
+     margin-top: -50px;
+    }
+
+        .toptext{
+            margin-top: -123px;
+            margin-left: 43px;
+        }
+
+
+    .item2{
+        display: flex;
+        flex-direction: row;
+        height: 70%;
+    }
+    
+    .child1{
+        width: 50%;
+    }
+
+    .child2{
+        width: 50%;
+    }
+
+    .sidetext{
+        font-size: 30px;
+        font-family: Proxima Nova Regular Italic;
+        color: white;
+        padding-right: 204px;
+        padding-left: 117px;
+    }
+
+    .image{
+        margin-left:220px;margin-bottom:177px
+    }
+    .line{
+        width: 660px;
+        height: 1px;
+        background-color: #E14B32;
+        margin-top: -21px;
+        margin-left: 280px;
+    }
+    pre{
+        color: white;
+        margin-top:98.56px ;
+        margin-left: 100px;
+    }
+    .img1{
+        position: absolute;
+        height:300px;width:565px;filter:grayscale(100%);
+    }
+    .img2{
+        position: absolute;
+        margin:-10px;z-index:1;
+        margin-top: 180px;
+        margin-left: 445px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">
+            <div class="dot"></div>
+            <div class="toptext">
+            <p style="font-size:48px ;font-family:Proxima Nova Bold;color: white;">What our</p>
+            <p class="transparent" style="font-size:48px ;font-family:Proxima Nova Bold;color: azure;">clients say</p>
+            </div>
+        </div>
+        <div class="item2">
+            <div class="child1">
+                <div class="image">
+                    <img class="img1" src="Corporate Headshot Photographer.jpeg" alt="">
+                    <img class="img2" ; src="Image 10.png" alt="">
+                </div>
+                
+            </div>
+            <div class="child2">
+                <p class="sidetext">Their quality of development and responsiveness to our growing business needs has helped us drive engagement & revenue.</p>
+                <p style="font-size: 16px;font-family:Proxima Nova Bold;padding-left: 117px;color: white;">TANISHA BLAKELY, FARM JOURNAL</p>
+                <pre> <strong> 01</strong>   02   03   04</pre>
+                <div class="line"></div>
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+</html>
