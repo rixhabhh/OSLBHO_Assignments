@@ -1,65 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+
+
     <style>
-        .val-form{
+        .val-form {
             background-color: aliceblue;
             display: block;
             margin-top: 10%;
-            margin-bottom: 28%;
+            margin-bottom: 20%;
             padding: 0 50px;
         }
     </style>
 </head>
+
 <body>
     <div style="display: flex;justify-content: center;height: 100vh;background-color: grey;">
-    <div class="val-form">
-    <h1>Register with us</h1>
-    <form onsubmit="return validateForm()" method="post">
+        <div class="val-form">
+            <h1>Register with us</h1>
+            <form name="formVal" onsubmit="return validateForm()" method="post">
 
-        <label for="fname">Username:</label><br>
-        <input type="text" id="fname" name="fname" ><br>
+                <label for="fname">Username:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <p id="p1" style="color: red;"></p><br>
 
-        <label for="email">email:</label><br>
-        <input type="email" id="email" name="email"><br>
+                <label for="email">email:</label><br>
+                <input type="text" id="email" name="email"><br>
+                <p id="p2" style="color: red;"></p><br>
 
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password"><br>
+                <label for="password1">Password:</label><br>
+                <input type="password" id="password1" name="password"><br>
+                <p id="p3" style="color: red;"></p><br>
 
-        <label for="password">Confirm Password:</label><br>
-        <input type="password" id="password" name="password"><br>
+                <label for="password">Confirm Password:</label><br>
+                <input type="password2" id="password2" name="password"><br>
+                <p id="p4" style="color: red;"></p><br>
 
-        <input type="submit" value="Submit">
-       
-      </form>
-      
-      </div>
+                <button type="submit">Submit</button>
+            </form>
+
+        </div>
 
     </div>
 
-<script>
-    function validateForm() {
-  let x = document.forms["fname"].value;
-  function checkLength(x){
-    if (x.length<3){
-        
-    
-    }
-    checkLength()
-}
-return checkLength;
+    <script>
+        function validateForm() {
 
-//   let y = document.forms["email"].value;
-//   if (y.search("@")) {
-//     alert("email is invalid");
-//     return false;
-//   }
-}
-</script>
+            let x = document.forms["formVal"]["fname"].value;
+            let y = document.forms["formVal"]["email"].value;
+            let z = document.forms["formVal"]["password1"].value;
+            let k = document.forms["formVal"]["password2"].value;
+
+            function checkLength(x) {
+                return (x.length < 3) ? false : true;
+            }
+
+
+            function checkEmail(y) {
+                return (y.includes("@")) ? true : false;
+
+            }   
+
+            function checkPassword(z, k) {
+                return (z == k) ? false : true;
+
+            }
+
+
+
+            if (!checkLength(x) || !chechEmail(y) || !checkPassword(z,k) ){
+
+
+            !checkLength(x)?document.getElementById("p1").innerHTML = "Username must be atleat 3 chracters":null;
+
+              !checkPassword(z,k) ? document.getElementById("p3").innerHTML = "Passwords do not match" : null;
+              !checkEmail(y)?document.getElementById("p2").innerHTML = "Email is invalid":null;
+
+                return false;
+            }
+
+            return true;
+
+        }
+
+
+
+
+
+    //   let y = document.forms["email"].value;
+    //   if (y.search("@")) {
+    //     alert("email is invalid");
+    //     return false;
+    //   }
+
+    </script>
+
+
 </body>
+
 </html>
