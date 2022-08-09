@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+<style>
+
+    .main-box{
+        background-color: #B1E1FF;
+       
+        border: 1px solid;
+        width: 400px;
+       
+        
+    }
+
+    .balance{
+        text-align: center;
+        margin: 2%;
+    }
+
+    .income-expense{
+        padding: 0 15% 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+
+    }        /* width: 400px; */
+
+    .income1{
+        align-items: center;
+    }
+    .expense1{
+        align-items: center;
+    }
+    .history{
+        padding-bottom: 5%;
+    }
+    .add-new{
+        padding-bottom: 5%;
+    }
+    .btn{
+        margin: 2%;
+        justify-content: center;
+    }
+    #list{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.list li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f7f7f7;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 10px;
+}
+.list li.plus{
+    border-right: 5px solid green;
+}
+.list li.minus{
+    border-right: 5px solid red;
+}
+
+.btn{
+    background-color: blue;
+    /* box-shadow: var(--box-shadow); */
+    color: white;
+    margin-top: 25px;
+    
+}
+    
+</style>
+</head>
+<!-- <body onload="askincome()"> -->
+
+    <body style="
+        background-color: #f7f7f7;
+        display: flex;
+      
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        
+      ">
+
+    <div class="main-box container">
+        <h1 style="color: purple;text-align: center;">EXPENSE TRACKER</h1>
+
+        <div class="balance1">
+            <h3 style="text-align: center;">YOUR BALANCE</h3>
+            <h4 style="text-align: center;" id="balance">$0.00</h4>
+
+        </div>
+
+
+        <div class="income-expense">
+
+            <div class="income1">
+                <h3 >Income</h3>
+                <h5 style="color:green;" id="income" class="money "></h5>
+            </div>
+
+            <div class="expense">
+                <h3 >Expense</h3>
+                <h5 style="color:red;" id="expense" class="money "></h5>
+            </div>
+        </div>
+
+
+        <div class="history">
+            <h4 style="text-align: center;">TRANSACTION HISTORY</h4>
+            <hr>
+            <ul id="list" class=" list list-group list-group-flush">
+                
+                
+            </ul>
+        </div>
+
+
+        <div class="add-new">
+            <h3 style="text-align: center;">Add New Transaction</h3>
+            <hr>
+
+        
+
+                <form id="form">
+
+                    <div class="form-group">
+                      <label>Text</label>
+                      <input id="text" type="text" class="form-control" placeholder="Enter text" required>
+                      
+                    </div>
+                    <div class="form-group">
+                      <label>Amount (Please prefix + or -)</label>
+                      <input id="amt" type="number" class="form-control"  placeholder="Enter amount" required>
+                    </div>
+                    
+                    <button type="submit" id = "btn" class="btn btn-primary btn-lg btn-block">Add Transaction</button>
+                  </form>
+
+        </div>
+    
+
+        <!-- <button onclick = "return functSubmit()" type="submit" id = "submit" class="btn btn-primary btn-lg btn-block">Add Transaction</button> -->
+
+    </div>
+
+    <script>
+
+var state = {
+    balance: 1000,
+    income: 400,
+    expense: 100,
+    transactions: [
+        
+    ]
+}
+const balanceEl = document.getElementById('balance');
+const incomeEl = document.getElementById('income');
+const expenseEl = document.getElementById('expense');
+const listEl = document.getElementById('list');
+var addtrsnEl = document.querySelector('#btn');
+var textinpEl = document.querySelector('#text');
+var amtinpEl = document.querySelector('#amt');
+function init() {
+    var localstate= JSON.parse(localStorage.getItem('expenseTrackerstate'
+    ));
+    if(localstate!== null){
+        state=localstate;
+    }
+    updateState();
+    initListeners();
+}
+function initListeners() {
+    addtrsnEl.addEventListener('click', onAddtrsn);
+}
+function onAddtrsn() {
+    var text = textinpEl.value;
+    var amount = amtinpEl.value;
+    if (text !== '' && amount !== '') {
+        var transaction = {
+            text: textinpEl.value,
+            amount: parseInt(amtinpEl.value)
+        };
+        state.transactions.push(transaction);
+    }
+    else {
+        alert("Please enter valid data");
+    }
+    textinpEl.value = '';
+    amtinpEl.value = '';
+    
+    updateState();
+}
+function updateState() {
+    var balance = 0,
+        income = 0,
+        expense = 0,
+        item;
+    for (var i = 0; i < state.transactions.length; i++) {
+        item = state.transactions[i];
+        if (item.amount > 0) {
+            income += item.amount;
+        }
+        else if (item.amount < 0) {
+            expense -= item.amount;
+        }
+    }
+    balance = income - expense;
+    // console.log(balance,income,expense);
+    state.balance = balance;
+    state.income = income;
+    state.expense = expense;
+    localStorage.setItem('expenseTrackerstate',JSON.stringify(state),true)
+    render();
+}
+function render() {
+    balanceEl.innerHTML = `${state.balance}`;
+    incomeEl.innerHTML = `${state.income}`;
+    expenseEl.innerHTML = `${state.expense}`;
+    listEl.innerHTML = '';
+    for (var i = 0; i < state.transactions.length; i++) {
+        item = state.transactions[i];
+        const transactionEl = document.createElement('li');
+        if (item.amount < 0) {
+            transactionEl.classList.add('minus')
+        }
+        else {
+            transactionEl.classList.add('plus')
+        }
+        transactionEl.append(state.transactions[i].text);
+        listEl.appendChild(transactionEl);
+        var containerEl = document.createElement('div');
+        var amountEl = document.createElement('span');
+        amountEl.innerHTML = `${item.amount}`;
+        containerEl.appendChild(amountEl);
+        
+        transactionEl.appendChild(containerEl);
+    }
+}
+init();
+
+localStorage.clear();
+
+
+
+    </script>
+
+</body>
