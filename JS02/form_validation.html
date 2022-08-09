@@ -12,16 +12,22 @@
     <style>
         .val-form {
             background-color: aliceblue;
-            display: block;
+            /* display: block; */
             margin-top: 10%;
-            margin-bottom: 20%;
+            /* margin-bottom: 20%; */
             padding: 0 50px;
+            border: 1px solid;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
         }
     </style>
 </head>
 
+<div id="data"></div>
+
 <body>
-    <div style="display: flex;justify-content: center;height: 100vh;background-color: grey;">
+    <div style="display: flex; flex-direction: row; justify-content: center;height: 100vh;background-color: grey;">
         <div class="val-form">
             <h1>Register with us</h1>
             <form name="formVal" onsubmit="return validateForm()" method="post">
@@ -35,11 +41,11 @@
                 <p id="p2" style="color: red;"></p><br>
 
                 <label for="password1">Password:</label><br>
-                <input type="password" id="password1" name="password"><br>
+                <input type="password" id="password1" name="password1"><br>
                 <p id="p3" style="color: red;"></p><br>
 
                 <label for="password">Confirm Password:</label><br>
-                <input type="password2" id="password2" name="password"><br>
+                <input type="password" id="password2" name="password2"><br>
                 <p id="p4" style="color: red;"></p><br>
 
                 <button type="submit">Submit</button>
@@ -68,13 +74,13 @@
             }   
 
             function checkPassword(z, k) {
-                return (z == k) ? false : true;
+                return (z == k) ? true : false;
 
             }
 
 
 
-            if (!checkLength(x) || !chechEmail(y) || !checkPassword(z,k) ){
+            if (!checkLength(x) || !checkEmail(y) || !checkPassword(z,k) ){
 
 
             !checkLength(x)?document.getElementById("p1").innerHTML = "Username must be atleat 3 chracters":null;
@@ -84,8 +90,13 @@
 
                 return false;
             }
+            console.log(document.getElementById("fname").value);
+            console.log(document.getElementById("email").value);
+            console.log(document.getElementById("password1").value);
+            return false;
+            
+            
 
-            return true;
 
         }
 
