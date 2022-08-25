@@ -1,13 +1,13 @@
 <?php
 // require("connect.php");
-if($_SERVER["REQUEST_METHOD"] == "POST"){
+if (isset($_POST['submit'])){
     $fname=filter($_POST['fname']);
     $phone=filter($_POST['number']);
     $email=$_POST['email'];
     $dob=$_POST['date'];
 
  
-
+    
 
     if (!empty($fname) &&!empty($phone) &&  //CHECKING IF ANY OR ALL THE FIELDS ARE EMPTY
     !empty($email) &&
@@ -17,33 +17,25 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         $returning=true;
         if($fname=='' || strlen($fname)<4){         //CHECKING LENGTH OF USERNAME
-            echo "full name must be 3 three charcter" ;
-            echo "<br>";
+            $error1 = "full name must be 3 three charcter" ;
+            
             $returning=false;
         }
-          if(strlen($phone)<10 && is_integer((integer)$phone)){
-            echo ' invalid phone';
-            echo "<br>";
+          if(strlen($phone)<10 && is_integer((integer)$phone)){         //CHECKING PHONE 
+            $error2 = ' invalid phone';
+            
             $returning=false;
         }
         if(empty($dob)){
-            echo'invalid date';
-            $k=false;
+            $error3 = 'invalid date';
+            $returning=false;
         }
        
         if( $returning){
             include ('connect.php');
         }
 
-        $sql ="INSERT INTO users2(fname,email,phone,dob) VALUES ('$fname','$email','$phone','$dob')";
-        if ($conn->query($sql) === TRUE) {
-            $url = "welcome.php?fname=".$fname;
-            header("Location: $url");
-            
-          } else {
-            echo "Error: " . $sql . "<br>" . $conn->error;
-           
-          }
+     
    
 
 }

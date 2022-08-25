@@ -2,6 +2,8 @@
 
 
 
+    
+
     $hName='localhost'; // host name
 
     $uName='root';   // database user name
@@ -15,4 +17,6 @@
       if(!$conn){
           die('Could not Connect MySql Server:' .mysql_error());
       }
+
+      include "submit.php";
 ?>

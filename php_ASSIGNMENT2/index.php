@@ -1,7 +1,7 @@
 
 <?php
 
-include('../register.php');
+include 'register.php';
 
 $alert = $_GET['alert'];
 
@@ -47,20 +47,21 @@ background: #eee;
             </div>
             <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
             
-              <form action="register.php" method="POST">
+              <form action="#" method="POST">
              
 
                 <div class="form-outline mb-4">
 
                     <label class="form-label" for="form1Example23">Username</label>
                     <input type="text" name="fname" id="form1Example23" class="form-control form-control-lg" />
+                    <span style='color:red'><?php echo $error1?></span>
                     
                   </div>
 
 
                 <div class="form-outline mb-4">
 
-                  <label class="form-label" for="form1Example13">Email address</label>
+                  <label class="form-label" for="form1Example13" required>Email address</label >
                   <input type="email" name="email" id="form1Example13" class="form-control form-control-lg" />
                   
                 </div>
@@ -72,6 +73,7 @@ background: #eee;
 
                     <label class="form-label" for="form1Example13">Phone Number</label>
                     <input type="number" name="number" id="form1Example13" class="form-control form-control-lg" />
+                    <span style='color:red'><?php echo $error2?></span>
                     
                   </div>
 
@@ -79,6 +81,7 @@ background: #eee;
 
                     <label class="form-label" for="form1Example13">Date of Birth</label>
                     <input type="date" name="date" id="form1Example13" class="form-control form-control-lg" />
+                    <span style='color:red'><?php echo $error3?></span>
                     
                   </div>
       
@@ -89,7 +92,7 @@ background: #eee;
                   </div>
       
                 <!-- Submit button -->
-                <button type="submit" name="signup" class="btn btn-primary btn-lg btn-block">Sign in</button>
+                <button type="submit" name="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
       
                 <div class="divider d-flex align-items-center my-4">
                  

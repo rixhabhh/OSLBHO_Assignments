@@ -1,4 +1,5 @@
 <?php
+// include ('register.php');
 $fname = $_GET['fname'];
 ?>
 <!DOCTYPE html>
@@ -228,7 +229,7 @@ header .logo
      </div> -->
      <section class="showcase">
     <header>
-      <h2 class="logo">WELCOME <BR><?php
+      <h2 class="logo">WELCOME <br><?php
         echo $fname;
         ?></h2>
       <div class="toggle"></div>
