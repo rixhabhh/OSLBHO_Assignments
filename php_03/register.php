@@ -1,12 +1,6 @@
 <?php
 
 
-// include "index.php";
-
-// if($_SERVER["REQUEST_METHOD"] == "POST"){  
-    
-    
-    //Declaring and assigning the variables
 
     if(isset($_POST['submit'])){
 
@@ -33,21 +27,39 @@
 
      $req_err= "";
     //  $email_err = $imageErr = $phone_err="";
-     if($fname==""||strlen($fname)<3||$lname==""||strlen($lname)<3||strlen($gender)<3||strlen($uname)<3||strlen($nationality)<3){
+     if($fname==""||strlen($fname)<3){
        
-        echo  "length should be more than 3 characters";
-        die();
+        $error = 'length should be more than 3 characters';
+        // echo  "length should be more than 3 characters";
+        // die();
      }
+
+     if($lname==""||strlen($lname)<3){
+        $error1 = 'length should be more than 3 characters';
+
+     }
+
+
+     if(strlen($uname)<4){
+        $error2 = 'must be unique';
+
+     }
+     if (strlen($nationality)<3){
+
+     }
+
    
     if(!preg_match('/\.(jpg|png|jpeg)$/', $image)|| ($_FILES["image"]["size"] < 500)){
-        echo 'invalid file format or invalid file size';
-        die();
+        $error4 = 'invalid file format or invalid file size';
+        // die();
     }
    
     if(!preg_match('/^[0-9]{10}+$/', $phone)){
-        echo "Please check your phone number";
-        die();
+        $error5 = "Please check your phone number";
+        // die();
     }
+
+    else{}
     
    
        

@@ -1,4 +1,11 @@
+<?php
 
+
+include 'register.php';
+
+// $alert = $_GET['alert'];
+
+?>
 
 
 <!DOCTYPE html>
@@ -12,14 +19,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
-<?php
 
-
-include 'register.php';
-
-// $alert = $_GET['alert'];
-
-?>
 
   <!-- Section: Design Block -->
 <section class="text-center text-lg-start">
@@ -49,7 +49,7 @@ include 'register.php';
             <h3 style="color: red";> <?php echo "$alert" ?></h3>
 
 
-            <form  method="POST">
+            <form action="#" method="POST">
               <!-- 2 column grid layout with text inputs for the first and last names -->
               <div class="row">
                 <div class="col-md-6 mb-4">
@@ -57,13 +57,14 @@ include 'register.php';
                     <input type="text" name="fname" id="form3Example1" class="form-control" placeholder="FIRST NAME"/>
                     
                   </div>
-                  <span><?php echo $req_err ?></span>
+                  <span style='color:red'><?php echo $error?></span>
                 </div>
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
                     <input type="text" name="lname" id="form3Example2" class="form-control" placeholder="LAST NAME"/>
                     
                   </div>
+                  <span style='color:red'><?php echo $error1?></span>
                 </div>
               </div>
 
@@ -73,10 +74,15 @@ include 'register.php';
                     <input type="text" name="uname" id="form3Example1" class="form-control" placeholder="USERNAME"/>
                     
                   </div>
+                  <span style='color:red'><?php echo $error2?></span>
                 </div>
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
-                    <input type="text" name="gender" id="form3Example2" class="form-control" placeholder="GENDER"/>
+                    <!-- <input type="text" name="gender" id="form3Example2" class="form-control" placeholder="GENDER"/> -->
+                    <label class="form-label">Gender</label><br>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="other"> Other
                     
                   </div>
                 </div>
@@ -85,7 +91,7 @@ include 'register.php';
               <div class="row">
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
-                    <input type="email" name="email" id="form3Example1" class="form-control" placeholder="EMAIL"/>
+                    <input type="email" name="email" id="form3Example1" class="form-control" placeholder="EMAIL" required/>
                     
                   </div>
                 </div>
@@ -94,6 +100,7 @@ include 'register.php';
                     <input type="number" name="number" id="form3Example2" class="form-control" placeholder="PHONE"/>
                     
                   </div>
+                  <span><?php echo "$error2" ?></span>
                 </div>
               </div>
 
@@ -109,6 +116,7 @@ include 'register.php';
                     <input type="text" name="nationality" id="form3Example2" class="form-control" placeholder="NATIONALITY"/>
                     
                   </div>
+                  <span style='color:red'><?php echo $error5?></span>
                 </div>
               </div>
 
@@ -118,6 +126,8 @@ include 'register.php';
                     <input type="text" name="image" id="form3Example1" class="form-control" placeholder="PROFILE IMAGE"/>
                     <label class="form-label">Less than 50 KB</label>
                   </div>
+                  <span style='color:red'><?php echo $error4?></span>
+
                 </div>
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
