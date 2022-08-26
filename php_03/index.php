@@ -94,13 +94,14 @@ include 'register.php';
                     <input type="email" name="email" id="form3Example1" class="form-control" placeholder="EMAIL" required/>
                     
                   </div>
+                  <span style='color:red'><?php echo $error6?></span>
                 </div>
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
                     <input type="number" name="number" id="form3Example2" class="form-control" placeholder="PHONE"/>
                     
                   </div>
-                  <span><?php echo "$error2" ?></span>
+                  <span><?php echo "$error5" ?></span>
                 </div>
               </div>
 
@@ -116,7 +117,7 @@ include 'register.php';
                     <input type="text" name="nationality" id="form3Example2" class="form-control" placeholder="NATIONALITY"/>
                     
                   </div>
-                  <span style='color:red'><?php echo $error5?></span>
+                  <span style='color:red'><?php echo $error7?></span>
                 </div>
               </div>
 

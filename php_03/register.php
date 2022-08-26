@@ -45,7 +45,7 @@
 
      }
      if (strlen($nationality)<3){
-
+        $error7 = "Invalid country";
      }
 
    
@@ -58,6 +58,10 @@
         $error5 = "Please check your phone number";
         // die();
     }
+
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $error6 = "Invalid email format";
+      }
 
     else{}
     
