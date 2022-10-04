@@ -1,0 +1,25 @@
+uuid: 0a9d3e57-4e4f-4c27-81d1-baf396c78946
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - biztheme
+_core:
+  default_config_hash: PmZbe2fAU6n5SzU8nJbYt_aJBeuMbKPYyBk0H-DHRxQ
+id: biztheme_branding
+theme: biztheme
+region: header
+weight: -20
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

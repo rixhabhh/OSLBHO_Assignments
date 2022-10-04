@@ -1,0 +1,8 @@
+uuid: 40a30cc4-fecd-4b56-a160-94a849fc72d9
+langcode: en
+status: true
+dependencies: {  }
+id: about_page_main_image
+label: 'About Page Main Image'
+revision: 0
+description: ''

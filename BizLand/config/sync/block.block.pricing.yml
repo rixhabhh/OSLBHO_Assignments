@@ -1,0 +1,25 @@
+uuid: df9fc7c4-e35e-4c41-9eb6-56d67bc791fb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:section_title:99c6ec0d-5d32-4eb4-a714-674132ef2002'
+  module:
+    - block_content
+  theme:
+    - biztheme
+id: pricing
+theme: biztheme
+region: pricing
+weight: -21
+provider: null
+plugin: 'block_content:99c6ec0d-5d32-4eb4-a714-674132ef2002'
+settings:
+  id: 'block_content:99c6ec0d-5d32-4eb4-a714-674132ef2002'
+  label: PRICING
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

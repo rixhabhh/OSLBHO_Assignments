@@ -1,0 +1,25 @@
+uuid: 0d73c242-9f4b-44cd-8cb7-d6a057c398c1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:section_title:d88077d8-27ae-45b4-8960-3b7deb390470'
+  module:
+    - block_content
+  theme:
+    - biztheme
+id: service
+theme: biztheme
+region: services
+weight: 0
+provider: null
+plugin: 'block_content:d88077d8-27ae-45b4-8960-3b7deb390470'
+settings:
+  id: 'block_content:d88077d8-27ae-45b4-8960-3b7deb390470'
+  label: SERVICE
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

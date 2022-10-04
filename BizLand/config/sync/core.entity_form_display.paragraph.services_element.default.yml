@@ -1,0 +1,44 @@
+uuid: aa750ded-7171-42b3-a32d-65e8f4edf1ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.services_element.field_body
+    - field.field.paragraph.services_element.field_heading
+    - field.field.paragraph.services_element.field_svg
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.services_element
+  module:
+    - svg_image
+id: paragraph.services_element.default
+targetEntityType: paragraph
+bundle: services_element
+mode: default
+content:
+  field_body:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_heading:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_svg:
+    type: image_image
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,8 @@
+uuid: 38e7f261-0e97-4beb-9ea4-c32afeb808e6
+langcode: en
+status: true
+dependencies: {  }
+id: footer_top
+label: 'Footer Top'
+revision: 0
+description: ''

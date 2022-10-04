@@ -1,0 +1,49 @@
+uuid: 03b12ab6-cf13-42fe-9cdf-7e931774d16e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.counter.field_bitmiji
+    - field.field.paragraph.counter.field_count
+    - field.field.paragraph.counter.field_name_counts
+    - paragraphs.paragraphs_type.counter
+  module:
+    - svg_image
+id: paragraph.counter.default
+targetEntityType: paragraph
+bundle: counter
+mode: default
+content:
+  field_bitmiji:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: false
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_count:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_name_counts:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

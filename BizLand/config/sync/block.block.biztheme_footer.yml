@@ -1,0 +1,27 @@
+uuid: 1f677748-60b4-465d-804f-489279bb702c
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - biztheme
+_core:
+  default_config_hash: rk3b2uT4eu0BTLJlrB_HVOEAfEKmBG9IpqGS0xSO_bo
+id: biztheme_footer
+theme: biztheme
+region: header
+weight: -17
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

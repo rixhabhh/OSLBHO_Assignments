@@ -1,0 +1,19 @@
+uuid: f54fea11-57e3-4ebb-ada6-8d19fb5f83b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.section_title
+    - field.storage.block_content.field_heading_black
+id: block_content.section_title.field_heading_black
+field_name: field_heading_black
+entity_type: block_content
+bundle: section_title
+label: 'Heading Black'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

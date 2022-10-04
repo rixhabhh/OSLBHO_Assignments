@@ -1,0 +1,25 @@
+uuid: eb1f7c60-59f5-451b-bc7a-2f55b8f5dfe5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:section_title:5f5153f2-dc88-4be9-b40c-19d099c18942'
+  module:
+    - block_content
+  theme:
+    - biztheme
+id: team
+theme: biztheme
+region: team
+weight: 0
+provider: null
+plugin: 'block_content:5f5153f2-dc88-4be9-b40c-19d099c18942'
+settings:
+  id: 'block_content:5f5153f2-dc88-4be9-b40c-19d099c18942'
+  label: TEAM
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 233c6c6c-2cd9-46e3-acf2-40df5411ef9a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:section_title:c2d3125d-6be3-42eb-8a19-65cb6fdb7dfa'
+  module:
+    - block_content
+  theme:
+    - biztheme
+id: portfolio
+theme: biztheme
+region: portfolio
+weight: 0
+provider: null
+plugin: 'block_content:c2d3125d-6be3-42eb-8a19-65cb6fdb7dfa'
+settings:
+  id: 'block_content:c2d3125d-6be3-42eb-8a19-65cb6fdb7dfa'
+  label: PORTFOLIO
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

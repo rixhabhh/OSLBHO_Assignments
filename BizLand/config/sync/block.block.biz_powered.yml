@@ -1,0 +1,22 @@
+uuid: d2d689ae-9eb8-41ab-b05c-80e6505f0a8f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - biz
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: biz_powered
+theme: biz
+region: footer
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

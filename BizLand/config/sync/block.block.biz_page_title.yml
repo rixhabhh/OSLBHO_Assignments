@@ -1,0 +1,20 @@
+uuid: 3129a28b-4275-45f4-85fb-ee4a5b72ef73
+langcode: en
+status: true
+dependencies:
+  theme:
+    - BIZ
+_core:
+  default_config_hash: fNwDdW063tk_ktzSWzZVeQS9wzvLooVO280BQ9WrsIs
+id: BIZ_page_title
+theme: BIZ
+region: header
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

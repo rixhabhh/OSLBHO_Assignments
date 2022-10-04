@@ -1,0 +1,25 @@
+uuid: eb60c7b5-9863-4a67-bd90-da81b0d4a081
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:our_social_networks:c0b7bd75-9795-47ec-8d5c-3b90dc68132e'
+  module:
+    - block_content
+  theme:
+    - biztheme
+id: oursocialnetworks
+theme: biztheme
+region: footer2
+weight: 3
+provider: null
+plugin: 'block_content:c0b7bd75-9795-47ec-8d5c-3b90dc68132e'
+settings:
+  id: 'block_content:c0b7bd75-9795-47ec-8d5c-3b90dc68132e'
+  label: 'Our Social Networks'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,39 @@
+uuid: 04a8c0e2-53be-4c80-9bec-24a9b60ff186
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.topbar_field.field_data
+    - field.field.paragraph.topbar_field.field_svg_image
+    - paragraphs.paragraphs_type.topbar_field
+  module:
+    - svg_image
+id: paragraph.topbar_field.default
+targetEntityType: paragraph
+bundle: topbar_field
+mode: default
+content:
+  field_data:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_svg_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

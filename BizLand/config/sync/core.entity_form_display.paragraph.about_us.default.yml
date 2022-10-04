@@ -1,0 +1,44 @@
+uuid: 699a776d-ab01-4ab3-8158-69d300c36d2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_us.field_description_about
+    - field.field.paragraph.about_us.field_heading_about
+    - field.field.paragraph.about_us.field_optional_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.about_us
+  module:
+    - svg_image
+id: paragraph.about_us.default
+targetEntityType: paragraph
+bundle: about_us
+mode: default
+content:
+  field_description_about:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_heading_about:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_optional_image:
+    type: image_image
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

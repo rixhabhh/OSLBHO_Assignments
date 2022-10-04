@@ -1,0 +1,44 @@
+uuid: 196da0c8-2b90-404f-9f50-9a50bd6144c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.portfolio_popup.field_name_portfolio
+    - field.field.paragraph.portfolio_popup.field_svg1
+    - field.field.paragraph.portfolio_popup.field_svg_2
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.portfolio_popup
+  module:
+    - svg_image
+id: paragraph.portfolio_popup.default
+targetEntityType: paragraph
+bundle: portfolio_popup
+mode: default
+content:
+  field_name_portfolio:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_svg1:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_svg_2:
+    type: image_image
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

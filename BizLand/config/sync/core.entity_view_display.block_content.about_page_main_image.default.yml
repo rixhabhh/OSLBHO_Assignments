@@ -1,0 +1,30 @@
+uuid: 5a20087c-8a36-466a-bcf9-f33ba7c015c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.about_page_main_image
+    - field.field.block_content.about_page_main_image.field_about_page_main_image
+  module:
+    - svg_image
+id: block_content.about_page_main_image.default
+targetEntityType: block_content
+bundle: about_page_main_image
+mode: default
+content:
+  field_about_page_main_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

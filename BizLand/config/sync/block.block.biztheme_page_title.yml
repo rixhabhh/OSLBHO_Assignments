@@ -1,0 +1,20 @@
+uuid: 5db1c1f9-ab35-4d5d-b017-5f7f31928e6c
+langcode: en
+status: false
+dependencies:
+  theme:
+    - biztheme
+_core:
+  default_config_hash: o_U1Tk8ooGIFeXQuyd53B14Cb1hfwGf8bzwzwwKd358
+id: biztheme_page_title
+theme: biztheme
+region: content
+weight: -21
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,46 @@
+.clients {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    
+  }
+
+  .clients .field__item img {
+    max-width: 100%;
+    transition: all 0.4s ease-in-out;
+    display: inline-block;
+    padding: 15px 0;
+  }
+  
+  .clients .field__item img:hover {
+    transform: scale(1.15);
+  }
+
+  .section-clients{
+    background: #f1f6fe;
+  }
+
+  @media only screen and (max-width: 991px) {
+    .clients {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 0;
+      
+    }
+
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .clients {
+      display: grid;
+      grid-template-columns: auto auto;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      
+    }
+  }

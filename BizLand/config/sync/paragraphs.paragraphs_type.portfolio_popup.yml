@@ -1,0 +1,10 @@
+uuid: 142d19e6-2ad2-4c1f-b601-340ff596d31b
+langcode: en
+status: true
+dependencies: {  }
+id: portfolio_popup
+label: 'Portfolio PopUp'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

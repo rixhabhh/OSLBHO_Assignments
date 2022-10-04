@@ -1,0 +1,8 @@
+uuid: 55cdcfb6-e181-415b-ad05-76d396fea63b
+langcode: en
+status: true
+dependencies: {  }
+id: top_bar
+label: 'Top Bar'
+revision: 0
+description: ''

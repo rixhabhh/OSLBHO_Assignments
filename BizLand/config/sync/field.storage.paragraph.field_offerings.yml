@@ -1,0 +1,36 @@
+uuid: ef920475-1587-4318-bf16-7797198cd42f
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_offerings
+field_name: field_offerings
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Aida dere'
+      label: 'Aida dere'
+    -
+      value: 'Nec feugiat nisl'
+      label: 'Nec feugiat nisl'
+    -
+      value: 'Nulla at volutpat dola'
+      label: 'Nulla at volutpat dola'
+    -
+      value: 'Pharetra massa'
+      label: 'Pharetra massa'
+    -
+      value: 'Massa ultricies mi'
+      label: 'Massa ultricies mi'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

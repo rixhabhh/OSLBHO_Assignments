@@ -1,0 +1,28 @@
+#block-topbarblock{
+    margin-top: -110px;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #106eea;
+    height: 40px;
+    font-size: 14px;
+    transition: all 0.5s;
+    color: #fff;
+    padding: 0;
+}
+
+#block-topbarblock .field--name-field-left-data , #block-topbarblock ul{
+    display: flex;
+    
+    
+}
+
+#block-topbarblock .field--name-field-left-data .field__item .paragraph{
+    display: flex;
+    
+}
+
+ ul{
+    margin-bottom: 0;
+}

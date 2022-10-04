@@ -1,0 +1,22 @@
+uuid: a1ea8ac5-1b24-4cdc-ac45-d2a13aed1079
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - biztheme
+_core:
+  default_config_hash: sER2bKew2HIK0c9A-Zz3NBjJVcwOMP3OCWIB_wRknHU
+id: biztheme_powered_by_drupal
+theme: biztheme
+region: header
+weight: -16
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

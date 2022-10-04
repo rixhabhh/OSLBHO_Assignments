@@ -1,0 +1,48 @@
+uuid: 79d5cabd-0e80-45ec-8fd5-22a758272836
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact.field_description
+    - field.field.paragraph.contact.field_svg_icon
+    - field.field.paragraph.contact.field_title
+    - paragraphs.paragraphs_type.contact
+  module:
+    - svg_image
+id: paragraph.contact.default
+targetEntityType: paragraph
+bundle: contact
+mode: default
+content:
+  field_description:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_svg_icon:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

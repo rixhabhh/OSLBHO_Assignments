@@ -1,0 +1,57 @@
+#block-views-block-about-page-block-block-1{
+    background-color: #f6f9fe;
+}
+
+.about-block .field--name-field-content{
+max-width: 100%;
+
+}
+
+.field--name-field-content div:nth-child(1) .paragraph .field--name-field-heading-about{
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.field--name-field-content div:nth-child(1) .paragraph .field--name-field-description-about{
+    font-style: italic;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+.field--name-field-content div:nth-child(2) .paragraph .field--name-field-description-about,
+.field--name-field-content div:nth-child(3) .paragraph .field--name-field-description-about{
+    font-size: 18px;
+    color: #555555;
+}
+
+.field--name-field-content div:nth-child(2) .paragraph .field--name-field-description-about,
+.field--name-field-content div:nth-child(2) .paragraph .field--name-field-heading-about,
+.field--name-field-content div:nth-child(3) .paragraph .field--name-field-description-about,
+.field--name-field-content div:nth-child(3) .paragraph .field--name-field-heading-about{
+    padding-left:85px ;
+    position: absolute;
+
+    
+}
+
+.field--name-field-content div:nth-child(2) .paragraph .field--name-field-optional-image
+.field--name-field-content div:nth-child(3) .paragraph .field--name-field-optional-image{
+    position: relative;
+}
+
+.field--name-field-content div:nth-child(2) .paragraph .field--name-field-heading-about,
+.field--name-field-content div:nth-child(3) .paragraph .field--name-field-heading-about{
+    margin-top:40px ;
+}
+
+.field--name-field-content div:nth-child(4) .paragraph {
+    margin-top:45px ;
+}
+
+.field--name-field-content div:nth-child(2)  {
+    margin-bottom:25px ;
+}
+
+#team{
+    padding-top: 0;
+}

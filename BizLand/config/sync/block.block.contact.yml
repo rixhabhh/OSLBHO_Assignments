@@ -1,0 +1,25 @@
+uuid: 7968f1c0-4123-4168-a0ea-1ef0ebfd61cb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:section_title:fca6da26-0d7f-4bb8-a143-7b2a0cc2011e'
+  module:
+    - block_content
+  theme:
+    - biztheme
+id: contact
+theme: biztheme
+region: Contact
+weight: -17
+provider: null
+plugin: 'block_content:fca6da26-0d7f-4bb8-a143-7b2a0cc2011e'
+settings:
+  id: 'block_content:fca6da26-0d7f-4bb8-a143-7b2a0cc2011e'
+  label: CONTACT
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

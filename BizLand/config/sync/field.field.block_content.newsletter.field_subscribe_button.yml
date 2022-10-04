@@ -1,0 +1,23 @@
+uuid: 44225f08-0e67-4693-bdd5-ca15aff52935
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.newsletter
+    - field.storage.block_content.field_subscribe_button
+  module:
+    - webform
+id: block_content.newsletter.field_subscribe_button
+field_name: field_subscribe_button
+entity_type: block_content
+bundle: newsletter
+label: 'Subscribe Button'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings: {  }
+field_type: webform

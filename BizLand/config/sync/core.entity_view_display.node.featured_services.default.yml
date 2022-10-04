@@ -1,0 +1,45 @@
+uuid: d039c636-5a22-4a69-ac4b-7d482e4d06dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.featured_services.body
+    - field.field.node.featured_services.field_featured_services_image
+    - node.type.featured_services
+  module:
+    - svg_image
+    - text
+    - user
+id: node.featured_services.default
+targetEntityType: node
+bundle: featured_services
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_featured_services_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: false
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

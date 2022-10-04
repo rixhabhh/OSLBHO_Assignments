@@ -1,0 +1,29 @@
+uuid: 5d04a7e7-d848-40a4-9624-a6b686cb550d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.maps
+    - field.field.block_content.maps.field_map_link
+id: block_content.maps.default
+targetEntityType: block_content
+bundle: maps
+mode: default
+content:
+  field_map_link:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

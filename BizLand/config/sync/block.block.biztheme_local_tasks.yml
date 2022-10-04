@@ -1,0 +1,22 @@
+uuid: 8a15bc41-75ce-443a-ba0f-2b293ae36c76
+langcode: en
+status: false
+dependencies:
+  theme:
+    - biztheme
+_core:
+  default_config_hash: bFbzHu53YvUiVtJbiAJcOezOQE8EuQTUP3ywDCAntO4
+id: biztheme_local_tasks
+theme: biztheme
+region: content
+weight: -20
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

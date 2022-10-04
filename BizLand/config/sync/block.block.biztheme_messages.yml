@@ -1,0 +1,22 @@
+uuid: d0e5cf69-aa8e-4519-8532-609e6e96ebe4
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - biztheme
+_core:
+  default_config_hash: Bz7p4CYHnHoI_2TDTF53EWL_u04aKT_YUuB3HW6x1W4
+id: biztheme_messages
+theme: biztheme
+region: content
+weight: -22
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

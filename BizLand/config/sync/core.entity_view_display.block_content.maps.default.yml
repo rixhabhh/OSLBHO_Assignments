@@ -1,0 +1,35 @@
+uuid: 26dd5a10-c978-4af0-98d7-1a97656d04bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.maps
+    - field.field.block_content.maps.field_map_link
+  module:
+    - simple_gmap
+id: block_content.maps.default
+targetEntityType: block_content
+bundle: maps
+mode: default
+content:
+  field_map_link:
+    type: simple_gmap
+    label: above
+    settings:
+      include_map: true
+      include_static_map: false
+      include_link: true
+      include_text: false
+      iframe_height: '200'
+      iframe_width: '400'
+      iframe_title: ''
+      static_scale: 1
+      zoom_level: 14
+      link_text: 'View larger map'
+      map_type: m
+      langcode: en
+      apikey: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

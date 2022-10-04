@@ -1,0 +1,45 @@
+uuid: 10fe1c5b-1ef3-4bd6-85d0-c5924b2edc04
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - comment
+    - contact
+    - contextual
+    - filter
+    - media
+    - paragraphs
+    - paragraphs_type_permissions
+    - search
+    - system
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access contextual links'
+  - 'access site-wide contact form'
+  - 'administer menu'
+  - 'administer paragraphs settings'
+  - 'administer paragraphs types'
+  - 'bypass paragraphs type content access'
+  - 'edit behavior plugin settings'
+  - 'search content'
+  - 'use text format restricted_html'
+  - 'view media'
+  - 'view paragraph content about_us'
+  - 'view paragraph content contact'
+  - 'view paragraph content counter'
+  - 'view paragraph content portfolio_popup'
+  - 'view paragraph content pricing'
+  - 'view paragraph content questions_and_answers'
+  - 'view paragraph content services_element'
+  - 'view paragraph content skills'
+  - 'view paragraph content topbar_field'
+  - 'view unpublished paragraphs'

@@ -1,0 +1,35 @@
+uuid: d4fa2f87-bcbb-47ee-baac-136d34f9462a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.top_bar
+    - field.field.block_content.top_bar.field_left_data
+    - field.field.block_content.top_bar.field_social_media
+  module:
+    - entity_reference_revisions
+    - social_media_links_field
+id: block_content.top_bar.default
+targetEntityType: block_content
+bundle: top_bar
+mode: default
+content:
+  field_left_data:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_social_media:
+    type: social_media_links_field_default
+    label: hidden
+    settings:
+      appearance: {  }
+      link_attributes: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

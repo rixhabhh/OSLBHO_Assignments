@@ -1,0 +1,22 @@
+uuid: 4bd11e15-9e0c-4433-a3ae-13bad9985af8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - biztheme
+_core:
+  default_config_hash: hUApy1cPK1R9QgrQ_I6kNUnSdn4ctZkcDdKZNpM1OYo
+id: biztheme_breadcrumbs
+theme: biztheme
+region: breadcrumb
+weight: -21
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

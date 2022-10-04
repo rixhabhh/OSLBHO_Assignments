@@ -1,0 +1,44 @@
+uuid: 3b10542d-f56b-40f9-ac35-a83549c49cc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact.field_description
+    - field.field.paragraph.contact.field_svg_icon
+    - field.field.paragraph.contact.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.contact
+  module:
+    - svg_image
+id: paragraph.contact.default
+targetEntityType: paragraph
+bundle: contact
+mode: default
+content:
+  field_description:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_svg_icon:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

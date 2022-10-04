@@ -1,0 +1,43 @@
+uuid: be64cee3-6690-487e-9c32-2c4b01a7a8fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.counter.field_bitmiji
+    - field.field.paragraph.counter.field_count
+    - field.field.paragraph.counter.field_name_counts
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.counter
+  module:
+    - svg_image
+id: paragraph.counter.default
+targetEntityType: paragraph
+bundle: counter
+mode: default
+content:
+  field_bitmiji:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_count:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_name_counts:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,23 @@
+uuid: 43dc8130-bc91-4d1d-a6c6-30dfc559be76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.featured_services
+  module:
+    - text
+id: node.featured_services.body
+field_name: body
+entity_type: node
+bundle: featured_services
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

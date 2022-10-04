@@ -1,0 +1,52 @@
+uuid: 7d4a958f-18e2-41df-b7b8-59051a4578bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.background_images.field_hero_page_bg
+    - field.field.node.background_images.field_testimony_image_bg
+    - node.type.background_images
+  module:
+    - svg_image
+    - user
+id: node.background_images.default
+targetEntityType: node
+bundle: background_images
+mode: default
+content:
+  field_hero_page_bg:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_testimony_image_bg:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

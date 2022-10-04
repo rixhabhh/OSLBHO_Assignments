@@ -1,0 +1,8 @@
+uuid: 1e1cbcb3-9863-4f7b-8467-10e3433d9d34
+langcode: en
+status: true
+dependencies: {  }
+id: address
+label: Address
+description: ''
+locked: false

@@ -1,0 +1,12 @@
+uuid: 158d6d3b-29b1-4ad1-9d4f-74bb6e7810c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: F2-L70Qkyg8g07lktY-yY8C9bh2dWB9XMQxmmdsbHOY
+id: media.media_colorbox
+label: 'Media Colorbox'
+targetEntityType: media
+cache: true

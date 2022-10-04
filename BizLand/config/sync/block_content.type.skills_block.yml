@@ -1,0 +1,8 @@
+uuid: bcfd0c91-4e34-43e1-945f-ac9b583cf747
+langcode: en
+status: true
+dependencies: {  }
+id: skills_block
+label: Skills
+revision: 0
+description: ''

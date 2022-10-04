@@ -1,0 +1,20 @@
+uuid: 80d57a55-c4a6-40ca-9051-1a725aa3bc94
+langcode: en
+status: false
+dependencies:
+  theme:
+    - biztheme
+_core:
+  default_config_hash: 2uq1pFMshZDyh1P27nBnhDTVSqQbwsE2QkYOaQVf7Yc
+id: biztheme_local_actions
+theme: biztheme
+region: content
+weight: -18
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: c10a09fd-dcc4-41c2-a0d7-8a7d7ae11162
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:top_bar:c95eff81-1d92-42fd-ad45-bcb3266eb646'
+  module:
+    - block_content
+  theme:
+    - biztheme
+id: topbarblock
+theme: biztheme
+region: header
+weight: -21
+provider: null
+plugin: 'block_content:c95eff81-1d92-42fd-ad45-bcb3266eb646'
+settings:
+  id: 'block_content:c95eff81-1d92-42fd-ad45-bcb3266eb646'
+  label: 'Top Bar Block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

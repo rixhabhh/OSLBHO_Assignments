@@ -1,0 +1,42 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+      css/heropage.css: {}
+      css/featured.css: {}
+      css/section.css: {}
+      css/aboutpage.css: {}
+      css/footer.css: {}
+      css/clients.css: {}
+      css/pricing.css: {}
+      css/services.css: {}
+      css/team.css: {}
+      css/faq.css: {}
+      css/contact.css: {}
+      css/topbar.css: {}
+      css/navbar.css: {}
+      css/testimonials.css: {}
+      css/animate.css: {}
+      css/portfolio.css: {}
+      css/skills.css: {}
+      https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css: {}
+      
+  js:
+    js/wow.min.js: {}
+    js/animate.js: {}
+    js/counts.js: {}
+    js/header.js: {}
+    https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js : {}
+
+
+  dependencies:
+    - core/jQuery
+
+fontawesome_5:
+  version: VERSION
+  css:
+    component:
+      //use.fontawesome.com/releases/v5.1.0/css/all.css: {}
+
+
+

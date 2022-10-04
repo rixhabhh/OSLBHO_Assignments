@@ -1,0 +1,25 @@
+uuid: 26bee918-8dc2-4cf2-914a-1d1e89a32983
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:contact:b148cb3d-b532-4d9c-b6c7-9c7f839dbb4e'
+  module:
+    - block_content
+  theme:
+    - biztheme
+id: contactblock2
+theme: biztheme
+region: Contact
+weight: -16
+provider: null
+plugin: 'block_content:b148cb3d-b532-4d9c-b6c7-9c7f839dbb4e'
+settings:
+  id: 'block_content:b148cb3d-b532-4d9c-b6c7-9c7f839dbb4e'
+  label: 'Contact Block 2'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

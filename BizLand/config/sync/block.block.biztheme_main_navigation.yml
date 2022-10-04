@@ -1,0 +1,27 @@
+uuid: 8b7a5880-f523-4c7f-aa3a-a1ce571d54a1
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - biztheme
+_core:
+  default_config_hash: Z42VwdvUxZk0re_JGQT_Bd4PR7EHFS340s9F0IngDAA
+id: biztheme_main_navigation
+theme: biztheme
+region: header
+weight: -18
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

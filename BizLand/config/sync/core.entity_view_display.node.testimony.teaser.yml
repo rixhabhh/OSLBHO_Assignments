@@ -1,0 +1,34 @@
+uuid: 289e3e70-3584-4d75-b2cf-b478f6b647be
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.testimony.body
+    - field.field.node.testimony.field_designation
+    - field.field.node.testimony.field_testimony_image
+    - node.type.testimony
+  module:
+    - text
+    - user
+id: node.testimony.teaser
+targetEntityType: node
+bundle: testimony
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_designation: true
+  field_testimony_image: true

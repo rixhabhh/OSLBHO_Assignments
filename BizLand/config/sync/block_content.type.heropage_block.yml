@@ -1,0 +1,8 @@
+uuid: dccb9912-4031-4b0a-850d-72275bdc6ba1
+langcode: en
+status: true
+dependencies: {  }
+id: heropage_block
+label: 'Heropage Block'
+revision: 0
+description: 'To display heropage'

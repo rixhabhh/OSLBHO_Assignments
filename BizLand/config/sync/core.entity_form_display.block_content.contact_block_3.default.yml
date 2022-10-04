@@ -1,0 +1,40 @@
+uuid: d8bd1c38-dc94-4a86-abf9-c12294d8166c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_block_3
+    - field.field.block_content.contact_block_3.field_map
+    - field.field.block_content.contact_block_3.field_webform_info
+  module:
+    - webform
+id: block_content.contact_block_3.default
+targetEntityType: block_content
+bundle: contact_block_3
+mode: default
+content:
+  field_map:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_webform_info:
+    type: webform_entity_reference_select
+    weight: 27
+    region: content
+    settings:
+      default_data: true
+      webforms: {  }
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

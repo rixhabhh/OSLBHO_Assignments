@@ -1,0 +1,45 @@
+uuid: 9da426a4-1217-40b0-802d-b4c6de68f9b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_block_3
+    - field.field.block_content.contact_block_3.field_map
+    - field.field.block_content.contact_block_3.field_webform_info
+  module:
+    - simple_gmap
+    - webform
+id: block_content.contact_block_3.default
+targetEntityType: block_content
+bundle: contact_block_3
+mode: default
+content:
+  field_map:
+    type: simple_gmap
+    label: hidden
+    settings:
+      include_map: true
+      include_static_map: false
+      include_link: false
+      include_text: false
+      iframe_height: '384'
+      iframe_width: '500'
+      iframe_title: ''
+      static_scale: 1
+      zoom_level: 14
+      link_text: 'View larger map'
+      map_type: m
+      langcode: en
+      apikey: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_webform_info:
+    type: webform_entity_reference_entity_view
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

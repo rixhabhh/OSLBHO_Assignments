@@ -1,0 +1,22 @@
+uuid: 2262d53d-f0a5-4d05-bddb-692488a68f73
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - BIZ
+_core:
+  default_config_hash: jccFSSVqV0WCDb6NtML1VWAWTtDbZ-zn5YgTRMgMrIM
+id: BIZ_help
+theme: BIZ
+region: help
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

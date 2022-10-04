@@ -1,0 +1,23 @@
+uuid: 5b335744-4c08-4d51-aa62-0b9a08b6324c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.our_social_networks
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.our_social_networks.body
+field_name: body
+entity_type: block_content
+bundle: our_social_networks
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

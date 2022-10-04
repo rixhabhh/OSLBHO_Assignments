@@ -1,0 +1,25 @@
+uuid: 9b4c2e8f-43ed-44b1-8825-075e132a0cb5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:heropage_block:a69f1743-cc39-49d9-8f9c-b686fa22c232'
+  module:
+    - block_content
+  theme:
+    - biztheme
+id: welcometo
+theme: biztheme
+region: heropage
+weight: -18
+provider: null
+plugin: 'block_content:a69f1743-cc39-49d9-8f9c-b686fa22c232'
+settings:
+  id: 'block_content:a69f1743-cc39-49d9-8f9c-b686fa22c232'
+  label: 'Welcome to '
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

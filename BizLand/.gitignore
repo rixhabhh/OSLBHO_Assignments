@@ -1,0 +1,62 @@
+# gitignore template for Drupal 8 projects
+#
+# earlier versions of Drupal are tracked in `community/PHP/`
+#
+# follows official upstream conventions:
+# https://www.drupal.org/docs/develop/using-composer
+
+# Ignore configuration files that may contain sensitive information
+/BizLand/web/sites/*/*settings*.php
+/BizLand/web/sites/*/*services*.yml
+
+# Ignore paths that may contain user-generated content
+/BizLand/web/sites/*/files
+/BizLand/web/sites/*/public
+/BizLand/web/sites/*/private
+/BizLand/web/sites/*/files-public
+/BizLand/web/sites/*/files-private
+
+# Ignore paths that may contain temporary files
+/BizLand/web/sites/*/translations
+/BizLand/web/sites/*/tmp
+/BizLand/web/sites/*/cache
+
+# Ignore drupal core (if not versioning drupal sources)
+/BizLand/web/vendor
+/BizLand/web/core
+/BizLand/web/modules/README.txt
+/BizLand/web/profiles/README.txt
+/BizLand/web/sites/development.services.yml
+/BizLand/web/sites/example.settings.local.php
+/BizLand/web/sites/example.sites.php
+/BizLand/web/sites/README.txt
+/BizLand/web/themes/README.txt
+/BizLand/web/.csslintrc
+/BizLand/web/.editorconfig
+/BizLand/web/.eslintignore
+/BizLand/web/.eslintrc.json
+/BizLand/web/.gitattributes
+/BizLand/web/.htaccess
+/BizLand/web/.ht.router.php
+/BizLand/web/autoload.php
+/BizLand/web/composer.json
+/BizLand/web/composer.lock
+/BizLand/web/example.gitignore
+/BizLand/web/index.php
+/BizLand/web/INSTALL.txt
+/BizLand/web/LICENSE.txt
+/BizLand/web/README.txt
+/BizLand/web/robots.txt
+/BizLand/web/update.php
+/BizLand/web/web.config
+
+# Ignore vendor dependencies and scripts
+/vendor
+/composer.phar
+/composer
+/robo.phar
+/robo
+/drush.phar
+/drush
+/drupal.phar
+/drupal

@@ -1,0 +1,24 @@
+uuid: 4865d3d9-8d8a-4192-a245-18ca1c0cf6ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.portfolio
+  module:
+    - views
+  theme:
+    - biztheme
+id: views_block__portfolio_block_1
+theme: biztheme
+region: portfolio
+weight: 0
+provider: null
+plugin: 'views_block:portfolio-block_1'
+settings:
+  id: 'views_block:portfolio-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: '48'
+visibility: {  }

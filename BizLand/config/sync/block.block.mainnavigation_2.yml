@@ -1,0 +1,25 @@
+uuid: 9f94c840-65c1-4603-94cc-49e7916a7d72
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - biztheme
+id: mainnavigation_2
+theme: biztheme
+region: header
+weight: -19
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

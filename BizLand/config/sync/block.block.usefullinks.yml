@@ -1,0 +1,25 @@
+uuid: 434c8d1b-843f-462a-a529-f1572b6a9847
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.useful-links
+  module:
+    - system
+  theme:
+    - biztheme
+id: usefullinks
+theme: biztheme
+region: footer2
+weight: 1
+provider: null
+plugin: 'system_menu_block:useful-links'
+settings:
+  id: 'system_menu_block:useful-links'
+  label: 'Useful Links'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

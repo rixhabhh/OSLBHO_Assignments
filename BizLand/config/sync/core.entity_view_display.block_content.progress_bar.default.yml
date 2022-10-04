@@ -1,0 +1,32 @@
+uuid: 99fb0939-4ac8-41f0-91bb-bf2f58a8cf31
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.progress_bar
+    - field.field.block_content.progress_bar.body
+    - field.field.block_content.progress_bar.field_progress_bar
+  module:
+    - progress_bar
+    - text
+id: block_content.progress_bar.default
+targetEntityType: block_content
+bundle: progress_bar
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_progress_bar:
+    type: progress_bar
+    label: above
+    settings:
+      progress_bar_color: '#ffffff'
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

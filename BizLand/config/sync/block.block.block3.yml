@@ -1,0 +1,25 @@
+uuid: 8a8cde28-58be-417e-a3cb-11144d6af5c5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:contact_block_3:98770a17-e84b-4a72-b28e-aacfdc6db901'
+  module:
+    - block_content
+  theme:
+    - biztheme
+id: block3
+theme: biztheme
+region: Contact
+weight: -15
+provider: null
+plugin: 'block_content:98770a17-e84b-4a72-b28e-aacfdc6db901'
+settings:
+  id: 'block_content:98770a17-e84b-4a72-b28e-aacfdc6db901'
+  label: 'Block 3 '
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

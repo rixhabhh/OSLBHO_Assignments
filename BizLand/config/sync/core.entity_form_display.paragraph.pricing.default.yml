@@ -1,0 +1,50 @@
+uuid: 7c86083f-2ed4-4c91-a9b4-1edf6dfa2a47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pricing.field_buy_now
+    - field.field.paragraph.pricing.field_cost
+    - field.field.paragraph.pricing.field_name
+    - field.field.paragraph.pricing.field_offerings
+    - paragraphs.paragraphs_type.pricing
+  module:
+    - link
+id: paragraph.pricing.default
+targetEntityType: paragraph
+bundle: pricing
+mode: default
+content:
+  field_buy_now:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_cost:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_name:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_offerings:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

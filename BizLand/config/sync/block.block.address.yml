@@ -1,0 +1,25 @@
+uuid: 2acdb593-caa7-470d-9f65-de90b34f845b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.address
+  module:
+    - system
+  theme:
+    - biztheme
+id: address
+theme: biztheme
+region: footer2
+weight: 0
+provider: null
+plugin: 'system_menu_block:address'
+settings:
+  id: 'system_menu_block:address'
+  label: Address
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

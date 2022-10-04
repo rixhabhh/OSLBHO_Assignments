@@ -1,0 +1,22 @@
+uuid: 18c3489b-6f53-43c7-9a75-c2c507d6c6cd
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - biztheme
+_core:
+  default_config_hash: OYeoZEnjFqT3gNqgMD3zwehyXABALKXl3yJ5cUbyj1g
+id: biztheme_content
+theme: biztheme
+region: content
+weight: -17
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

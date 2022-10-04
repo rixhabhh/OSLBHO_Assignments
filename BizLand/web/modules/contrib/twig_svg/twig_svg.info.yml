@@ -1,0 +1,11 @@
+name: Twig svg
+type: module
+description: Add a Twig function to make using inline SVGs easier.
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'Others'
+
+# Information added by Drupal.org packaging script on 2020-06-19
+version: '8.x-1.4'
+project: 'twig_svg'
+datestamp: 1592574431
