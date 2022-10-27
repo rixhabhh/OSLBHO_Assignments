@@ -1,0 +1,20 @@
+uuid: 491550cc-8fb8-4b3a-bdef-0e77b63f4851
+langcode: en
+status: true
+dependencies:
+  module:
+    - test
+    - text
+id: service_entity.field_title
+field_name: field_title
+entity_type: service_entity
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,5 @@
+name: 'test'
+type: module
+description: 'Provides custom entity services'
+core_version_requirement: ^8 || ^9
+package: 'Custom'

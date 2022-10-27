@@ -1,0 +1,57 @@
+<?php
+
+/**
+ * @file
+ * Contains test.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function test_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the test module.
+    case 'help.page.test':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provides custom entity services') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function test_theme($existing, $type, $theme, $path) {
+ 
+  return [
+    'nodedata' => [
+      'variables' => ['cards'=> [], 'title'=> NULL, 'description'=> NULL,  ],
+    ]
+  ];
+}
+
+/**
+ * Implements hook_theme().
+ */
+
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function test_theme_suggestions_service_entity(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#service_entity'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'service_entity__' . $sanitized_view_mode;
+  $suggestions[] = 'service_entity__' . $entity->bundle();
+  $suggestions[] = 'service_entity__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'service_entity__' . $entity->id();
+  $suggestions[] = 'service_entity__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

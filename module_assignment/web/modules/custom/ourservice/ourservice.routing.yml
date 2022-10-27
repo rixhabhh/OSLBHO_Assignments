@@ -1,0 +1,16 @@
+ourservice.main_form:
+ path: '/main-form'
+ defaults:
+   _title: 'Our Services entry form'
+   _form: '\Drupal\ourservice\Form\MainForm'
+ requirements:
+   _permission: 'access content'
+
+
+ourservice.service_page:
+ path: '/service-page/{id}'
+ defaults:
+   _title: 'Our Services entry form'
+   _controller: '\Drupal\ourservice\Controller\ServicePage::fetchData'
+ requirements:
+   _permission: 'access content'

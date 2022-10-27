@@ -1,0 +1,21 @@
+uuid: 477809d2-821a-49b6-bbba-572baf65ddf2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.service_entity.field_title
+    - test.service_entity_type.services_page
+  module:
+    - text
+id: service_entity.services_page.field_title
+field_name: field_title
+entity_type: service_entity
+bundle: services_page
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

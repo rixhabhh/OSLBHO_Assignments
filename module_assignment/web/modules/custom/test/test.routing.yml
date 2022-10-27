@@ -1,0 +1,7 @@
+test.content:
+  path: '/art/{id}' 
+  defaults: 
+    _controller: '\Drupal\test\Controller\AssignmentController::accessFields' 
+    _title: 'Hello World'
+  requirements: 
+    _permission: 'access content' 

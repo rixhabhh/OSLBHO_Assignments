@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function ourservice_theme($existing, $type, $theme, $path) {
+ 
+    return [
+      'nodedata1' => [
+        'variables' => ['cards'=> [], 'headers'=> [],  ],
+      ]
+    ];
+  }

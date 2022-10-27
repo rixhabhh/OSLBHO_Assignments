@@ -1,0 +1,21 @@
+uuid: 46e8803c-b983-40ec-91b7-2b65850f6bdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.service_entity.field_body
+    - test.service_entity_type.services_page
+  module:
+    - text
+id: service_entity.services_page.field_body
+field_name: field_body
+entity_type: service_entity
+bundle: services_page
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

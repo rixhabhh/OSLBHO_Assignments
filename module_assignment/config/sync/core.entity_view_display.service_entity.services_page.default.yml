@@ -1,0 +1,57 @@
+uuid: d06e3a7e-77d6-4276-9772-172214065179
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.service_entity.services_page.field_body
+    - field.field.service_entity.services_page.field_cards
+    - field.field.service_entity.services_page.field_title
+    - test.service_entity_type.services_page
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: service_entity.services_page.default
+targetEntityType: service_entity
+bundle: services_page
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_cards:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+  user_id:
+    type: author
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

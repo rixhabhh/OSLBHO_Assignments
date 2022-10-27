@@ -1,0 +1,5 @@
+name: Our Services
+type: module
+description: 'Provides a form to create a service page'
+package: Custom
+core_version_requirement: ^8 || ^9

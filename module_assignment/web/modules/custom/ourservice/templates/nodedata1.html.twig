@@ -1,0 +1,88 @@
+<style>
+
+.main_container {
+    background-color: #f6f9fe;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top:50px;
+}
+
+.card_container{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin: 50px 200px;
+}
+
+.card{
+    box-sizing: border-box;
+    width: 22%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgb(16 110 234 / 15%);
+    padding-bottom: 10px;
+}
+
+h4{
+    margin-bottom:0;
+}
+
+.img{
+    width: 100%;
+}
+
+.member-desig{
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    color: #aaaaaa;
+    margin: 0 auto;
+}
+
+.title{
+    color: #C47AFF;
+}
+</style>
+
+
+
+
+
+
+<div class="main_container">
+
+{% for data in headers %}
+<div class="title"><h1>{{ data.title }}</h1></div>
+<div> {{ data.description }} </div>
+{% endfor %}
+
+
+<div class="card_container">
+
+
+{% for card in cards %}
+
+<div class="card">
+    
+    <img class ="img" src="{{ file_url(card.image) }}">
+    <h4>{{ card.title }}</h4>
+    <div class="member-desig"><h5>{{ card.body }}</h5></div>
+    {# <div class="member-desig"><h5>{{ card[i] }}</h5></div> #}
+    <a href="{{ card.link }}">Read More</a>
+
+</div>
+
+
+{% endfor %}
+
+</div>
+</div>
