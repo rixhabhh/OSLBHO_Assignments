@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.skills.field_name_of_skill
+    - field.field.paragraph.skills.field_percentage
+    - paragraphs.paragraphs_type.skills
+  module:
+    - progress_bar
+id: paragraph.skills.default
+targetEntityType: paragraph
+bundle: skills
+mode: default
+content:
+  field_name_of_skill:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_percentage:
+    type: progress_bar
+    label: hidden
+    settings:
+      progress_bar_color: '#106eea'
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: section_title
+label: 'Section Title'
+revision: 0
+description: ''

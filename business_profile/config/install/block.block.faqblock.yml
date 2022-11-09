@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:faq:7a2c6004-6325-4356-9154-2db719fd513e'
+  module:
+    - block_content
+  theme:
+    - biztheme
+id: faqblock
+theme: biztheme
+region: FAQ_Section
+weight: 0
+provider: null
+plugin: 'block_content:7a2c6004-6325-4356-9154-2db719fd513e'
+settings:
+  id: 'block_content:7a2c6004-6325-4356-9154-2db719fd513e'
+  label: 'FAQ Block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

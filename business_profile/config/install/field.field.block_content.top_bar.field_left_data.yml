@@ -1,0 +1,42 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.top_bar
+    - field.storage.block_content.field_left_data
+    - paragraphs.paragraphs_type.topbar_field
+  module:
+    - entity_reference_revisions
+id: block_content.top_bar.field_left_data
+field_name: field_left_data
+entity_type: block_content
+bundle: top_bar
+label: 'Left Data'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      topbar_field: topbar_field
+    negate: 0
+    target_bundles_drag_drop:
+      contact:
+        weight: 6
+        enabled: false
+      pricing:
+        weight: 7
+        enabled: false
+      questions_and_answers:
+        weight: 8
+        enabled: false
+      services_element:
+        weight: 9
+        enabled: false
+      topbar_field:
+        weight: 10
+        enabled: true
+field_type: entity_reference_revisions

@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:clients:985bb332-2518-4c5a-9928-11140c9c9aa9'
+  module:
+    - block_content
+  theme:
+    - biztheme
+id: clients
+theme: biztheme
+region: counter
+weight: -19
+provider: null
+plugin: 'block_content:985bb332-2518-4c5a-9928-11140c9c9aa9'
+settings:
+  id: 'block_content:985bb332-2518-4c5a-9928-11140c9c9aa9'
+  label: Clients
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

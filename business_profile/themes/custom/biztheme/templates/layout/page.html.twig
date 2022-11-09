@@ -1,0 +1,38 @@
+<div id="navbar" class="navbar">{{ page.nav_main}}</div>
+
+<div id="header">{{ page.header }}</div>
+
+
+<div class="container-fluid">
+
+  <div>{{ page.heropage }}</div>
+  <div class="container">{{ page.about }}</div>
+  <div>{{ page.counter }}</div>
+  <div>{{ page.services }}</div>
+
+  <section id="testimonials" class="testimonials">
+    <div class="container" data-aos="zoom-in">
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper"{{ page.testimonials }}></div>
+    </div>
+  </section>
+
+  <div class="container">{{ page.portfolio }}</div>   
+  <div>{{ page.team }}</div>
+  <div>{{ page.pricing }}</div>
+  <div>{{ page.FAQ_Section }}</div>
+
+  <section id="contact">
+    <div class="contact container ">{{ page.Contact }}</div>
+  </section>
+
+  <footer class="container-fluid" id="footer">
+  <div class="{{ b5_top_container }}">
+    {{ page.footer1 }}
+    {{ page.footer2 }}
+    <div >{{ page.footer3 }}</div>
+  </div>
+</footer>
+
+</div>
+

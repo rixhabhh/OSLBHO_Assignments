@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.faq
+    - field.storage.block_content.field_faq
+    - paragraphs.paragraphs_type.questions_and_answers
+  module:
+    - entity_reference_revisions
+id: block_content.faq.field_faq
+field_name: field_faq
+entity_type: block_content
+bundle: faq
+label: FAQ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      questions_and_answers: questions_and_answers
+    negate: 0
+    target_bundles_drag_drop:
+      pricing:
+        weight: 4
+        enabled: false
+      questions_and_answers:
+        weight: 5
+        enabled: true
+      services_element:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

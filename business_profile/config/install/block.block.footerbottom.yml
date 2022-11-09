@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_bottom:dcf9e0b4-651b-4021-8397-548e187940d6'
+  module:
+    - block_content
+  theme:
+    - biztheme
+id: footerbottom
+theme: biztheme
+region: footer3
+weight: 0
+provider: null
+plugin: 'block_content:dcf9e0b4-651b-4021-8397-548e187940d6'
+settings:
+  id: 'block_content:dcf9e0b4-651b-4021-8397-548e187940d6'
+  label: 'Footer Bottom'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

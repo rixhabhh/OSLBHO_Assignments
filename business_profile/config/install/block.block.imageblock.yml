@@ -1,0 +1,24 @@
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:about_page_main_image:45cdf8de-0120-4ed2-b5e2-7f883d226c85'
+  module:
+    - block_content
+  theme:
+    - biztheme
+id: imageblock
+theme: biztheme
+region: about
+weight: 2
+provider: null
+plugin: 'block_content:45cdf8de-0120-4ed2-b5e2-7f883d226c85'
+settings:
+  id: 'block_content:45cdf8de-0120-4ed2-b5e2-7f883d226c85'
+  label: 'Image Block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.progress_bar
+    - field.storage.block_content.field_progress_bar
+id: block_content.progress_bar.field_progress_bar
+field_name: field_progress_bar
+entity_type: block_content
+bundle: progress_bar
+label: 'progress bar'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

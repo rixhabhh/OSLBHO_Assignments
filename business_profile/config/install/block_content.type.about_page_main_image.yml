@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: about_page_main_image
+label: 'About Page Main Image'
+revision: 0
+description: ''

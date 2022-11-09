@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_top:a9e12363-63d7-4253-9f6c-fc34d872243e'
+  module:
+    - block_content
+  theme:
+    - biztheme
+id: joinournewsletter
+theme: biztheme
+region: footer1
+weight: 0
+provider: null
+plugin: 'block_content:a9e12363-63d7-4253-9f6c-fc34d872243e'
+settings:
+  id: 'block_content:a9e12363-63d7-4253-9f6c-fc34d872243e'
+  label: 'Join Our Newsletter'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

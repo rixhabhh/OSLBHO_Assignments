@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:skills_block:d8b2c67a-740f-400f-956d-5240a26c7ad5'
+  module:
+    - block_content
+  theme:
+    - biztheme
+id: skills
+theme: biztheme
+region: counter
+weight: -21
+provider: null
+plugin: 'block_content:d8b2c67a-740f-400f-956d-5240a26c7ad5'
+settings:
+  id: 'block_content:d8b2c67a-740f-400f-956d-5240a26c7ad5'
+  label: Skills
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

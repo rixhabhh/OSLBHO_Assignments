@@ -1,0 +1,31 @@
+name: 'Biz Theme'
+type: theme
+description: 'Biz Theme subtheme based on Bootstrap 5 theme.'
+core_version_requirement: '^9.2 || ^10'
+'base theme': bootstrap5
+libraries:
+  - biztheme/global-styling
+ckeditor5-stylesheets:
+  - css/style.css
+stylesheets-remove:
+  - '@bootstrap5/css/style.css'
+regions:
+  header: Header
+  nav_branding: 'Navigation branding region'
+  nav_main: 'Main navigation region'
+  nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
+  heropage: Heropage
+  about: 'About'
+  counter: 'Counter'
+  breadcrumb: Breadcrumbs
+  content: 'Main content'
+  services: 'Services'
+  portfolio: 'Portfolio'
+  testimonials: Testimonials
+  team: 'Team'
+  pricing: 'Pricing'
+  FAQ_Section: 'FAQ section'
+  Contact: 'Contact'
+  footer1: FooterTop
+  footer2: FooterMid
+  footer3: FooterBottom

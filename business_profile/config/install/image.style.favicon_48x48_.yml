@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: favicon_48x48_
+label: favicon(48x48)
+effects:
+  f14a79cb-d2b9-425d-997a-6d514647ef40:
+    uuid: f14a79cb-d2b9-425d-997a-6d514647ef40
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 48
+      height: 48
+      anchor: center-center

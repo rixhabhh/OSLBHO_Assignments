@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.background_images.field_hero_page_bg
+    - field.field.node.background_images.field_testimony_image_bg
+    - node.type.background_images
+  module:
+    - user
+id: node.background_images.teaser
+targetEntityType: node
+bundle: background_images
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_hero_page_bg: true
+  field_testimony_image_bg: true

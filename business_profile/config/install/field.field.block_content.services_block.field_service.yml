@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.services_block
+    - field.storage.block_content.field_service
+    - paragraphs.paragraphs_type.services_element
+  module:
+    - entity_reference_revisions
+id: block_content.services_block.field_service
+field_name: field_service
+entity_type: block_content
+bundle: services_block
+label: Service
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      services_element: services_element
+    negate: 0
+    target_bundles_drag_drop:
+      pricing:
+        weight: 3
+        enabled: false
+      services_element:
+        weight: 4
+        enabled: true
+field_type: entity_reference_revisions

@@ -1,0 +1,59 @@
+{
+    "name": "business_profile",
+    "description": "BizTheme theme is inspired from bootstrap 5, and provides very good user experience for creating a business site .",
+    "type": "drupal-profile",
+    "license": "GPL-2.0-or-later",
+    "authors": [],
+    "repositories": [{
+        "type": "composer",
+        "url": "https://packages.drupal.org/8"
+    }],
+    "require": {
+        "php": ">=7.4",
+        "drupal/core": "^9.3",
+        "drupal/core-composer-scaffold": "^9.2",
+        "drupal/core-recommended": "^9.3",
+        "drupal/addtoany": "^1.16",
+        "drupal/bootstrap5": "^2.0",
+        "drupal/flexslider": "^2.0",
+        "drupal/paragraphs": "^1.15",
+        "drupal/pathauto": "^1.11",
+        "drupal/scroll_top_button": "^2.0",
+        "drupal/superfish": "^1.4",
+        "drupal/svg_image": "^1.16",
+        "drupal/video_embed_field": "^2.4"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "drupal/core-dev": "^9.1"
+    },
+    "extra": {
+        "composer-exit-on-patch-failure": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            }
+        },
+        "installer-paths": {
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ]
+        }
+    }}

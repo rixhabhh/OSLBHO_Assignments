@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:section_title:06e3b099-e46f-441d-be83-488bb69f9353'
+  module:
+    - block_content
+  theme:
+    - biztheme
+id: about
+theme: biztheme
+region: about
+weight: 0
+provider: null
+plugin: 'block_content:06e3b099-e46f-441d-be83-488bb69f9353'
+settings:
+  id: 'block_content:06e3b099-e46f-441d-be83-488bb69f9353'
+  label: ABOUT
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_offerings
+    - paragraphs.paragraphs_type.pricing
+  module:
+    - options
+id: paragraph.pricing.field_offerings
+field_name: field_offerings
+entity_type: paragraph
+bundle: pricing
+label: Offerings
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

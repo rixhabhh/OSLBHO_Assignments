@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: questions_and_answers
+label: 'Questions and Answers'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

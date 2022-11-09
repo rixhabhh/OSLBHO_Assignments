@@ -1,0 +1,127 @@
+#footer{
+    background: #fff;
+    padding: 0 0 30px 0;
+    color: #444444;
+    font-size: 14px;
+    background: #f1f6fe;
+}
+.py-4{
+    padding: 1.5rem 0;
+}
+
+.bg{
+  background-color: white;
+}
+
+#footer .copyright {
+    text-align: center;
+    float: left;
+  }
+  
+#footer .credits {
+    float: right;
+    text-align: center;
+    font-size: 13px;
+    color: #444444;
+  }
+
+.footer-mid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 60px 0 30px 0;
+    background: #fff;
+}
+
+.form-item, .form-actions {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#block-oursocialnetworks ul{
+  display: flex;
+}
+
+#block-oursocialnetworks ul li{
+  margin-right: 5%;
+}
+
+#block-oursocialnetworks h2, #block-address-menu, #block-usefullinks-menu, #block-ousservices-2-menu{
+  font-size: 24px;
+  margin: 0 0 15px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+}
+
+#block-joinournewsletter{
+  padding: 50px 0;
+  background: #f1f6fe;
+  text-align: center;
+  font-size: 15px;
+}
+
+#block-joinournewsletter h2{
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+}
+  
+
+
+#edit-actions--3{
+  float: left;
+}
+
+#edit-flexbox--2{
+  width: 50%;
+  margin-left: 35%;
+}
+
+#edit-flexbox--2 .webform-flex .webform-flex--container #edit-actions--2{
+  float: left;
+}
+
+@media only screen and (max-width: 991px) {
+  .footer-mid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 60px 0 30px 0;
+    background: #fff;
+    padding: 15%;
+}
+
+.py-4{
+  display: flex;
+  flex-direction: column;
+}
+
+#edit-flexbox--2{
+  width: 75%;
+  margin:auto;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-mid{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 60px 0 30px 0;
+    background: #fff;
+    padding: 15%;
+}
+
+
+
+#edit-flexbox--2{
+  width: 90%;
+  margin: auto;
+
+}
+}

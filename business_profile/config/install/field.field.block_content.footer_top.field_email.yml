@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_top
+    - field.storage.block_content.field_email
+    - webform.webform.subscribe_button
+  module:
+    - webform
+id: block_content.footer_top.field_email
+field_name: field_email
+entity_type: block_content
+bundle: footer_top
+label: Email
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 3d436805-f315-408e-a51d-e5d552ac5d53
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

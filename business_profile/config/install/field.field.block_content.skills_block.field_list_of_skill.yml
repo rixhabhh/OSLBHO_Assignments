@@ -1,0 +1,51 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.skills_block
+    - field.storage.block_content.field_list_of_skill
+    - paragraphs.paragraphs_type.skills
+  module:
+    - entity_reference_revisions
+id: block_content.skills_block.field_list_of_skill
+field_name: field_list_of_skill
+entity_type: block_content
+bundle: skills_block
+label: 'List of Skill'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      skills: skills
+    negate: 0
+    target_bundles_drag_drop:
+      about_us:
+        weight: 9
+        enabled: false
+      contact:
+        weight: 10
+        enabled: false
+      counter:
+        weight: 11
+        enabled: false
+      pricing:
+        weight: 12
+        enabled: false
+      questions_and_answers:
+        weight: 13
+        enabled: false
+      services_element:
+        weight: 14
+        enabled: false
+      skills:
+        weight: 15
+        enabled: true
+      topbar_field:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

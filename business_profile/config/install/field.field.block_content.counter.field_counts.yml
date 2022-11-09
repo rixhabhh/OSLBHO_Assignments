@@ -1,0 +1,51 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.counter
+    - field.storage.block_content.field_counts
+    - paragraphs.paragraphs_type.counter
+  module:
+    - entity_reference_revisions
+id: block_content.counter.field_counts
+field_name: field_counts
+entity_type: block_content
+bundle: counter
+label: Counts
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      counter: counter
+    negate: 0
+    target_bundles_drag_drop:
+      about_us:
+        weight: 9
+        enabled: false
+      contact:
+        weight: 10
+        enabled: false
+      counter:
+        weight: 11
+        enabled: true
+      pricing:
+        weight: 12
+        enabled: false
+      questions_and_answers:
+        weight: 13
+        enabled: false
+      services_element:
+        weight: 14
+        enabled: false
+      skills:
+        weight: 15
+        enabled: false
+      topbar_field:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

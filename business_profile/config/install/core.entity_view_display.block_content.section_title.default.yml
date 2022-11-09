@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.section_title
+    - field.field.block_content.section_title.body
+    - field.field.block_content.section_title.field_heading_black
+    - field.field.block_content.section_title.field_heading_blue
+  module:
+    - text
+id: block_content.section_title.default
+targetEntityType: block_content
+bundle: section_title
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_heading_black:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_heading_blue:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

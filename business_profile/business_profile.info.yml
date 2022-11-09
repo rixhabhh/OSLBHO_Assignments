@@ -1,0 +1,108 @@
+name: Business Profile
+type: profile
+description: "Description of your profile."
+core_version_requirement: "^8.8 || ^9"
+
+
+install:
+  - automated_cron
+  - better_exposed_filters
+  - big_pipe
+  - blazy
+  - block
+  - block_content
+  - breakpoint
+  - ckeditor
+  - colorbox
+  - comment
+  - config
+  - contact
+  - contextual
+  - datetime
+  - dblog
+  - devel
+  - devel_generate
+  - dynamic_page_cache
+  - editor
+  - entity_reference_revisions
+  - field
+  - field_ui
+  - file
+  - filter
+  - help
+  - history
+  - image
+  - jquery_ui
+  - jquery_ui_datepicker
+  - jquery_ui_progressbar
+  - jquery_ui_slider
+  - jquery_ui_touch_punch
+  - jsonapi
+  - link
+  - media
+  - media_gallery
+  - media_library
+  - menu_link_content
+  - menu_ui
+  - mysql
+  - node
+  - options
+  - page_cache
+  - paragraphs_type_permissions
+  - path
+  - path_alias
+  - progress_bar
+  - rdf
+  - responsive_image
+  - rest
+  - scroll_top_button
+  - search
+  - serialization
+  - shortcut
+  - simple_gmap
+  - slick
+  - slick_carousel_slider
+  - slick_ui
+  - slick_views
+  - social_media_links
+  - social_media_links_field
+  - superfish
+  - svg_image
+  - svg_image_responsive
+  - system
+  - taxonomy
+  - text
+  - toolbar
+  - tour
+  - twig_svg
+  - update
+  - user
+  - views_ui
+  - webform
+  - webform_access
+  - webform_attachment
+  - webform_devel
+  - webform_image_select
+  - webform_location_geocomplete
+  - webform_node
+  - webform_options_custom
+  - webform_scheduled_email
+  - webform_ui
+  - webform_bootstrap
+  - views
+  - paragraphs
+
+dependencies:
+  - node
+  - block
+  - views
+
+themes:
+  - bartik
+  - seven
+  - olivero
+  - claro
+  - seven
+  - stable9
+  - bootstrap5
+  - biztheme

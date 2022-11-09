@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:section_title:384d7951-29cb-4fb6-9b44-e23eb04042ce'
+  module:
+    - block_content
+  theme:
+    - biztheme
+id: f.a.q
+theme: biztheme
+region: FAQ_Section
+weight: 0
+provider: null
+plugin: 'block_content:384d7951-29cb-4fb6-9b44-e23eb04042ce'
+settings:
+  id: 'block_content:384d7951-29cb-4fb6-9b44-e23eb04042ce'
+  label: F.A.Q
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

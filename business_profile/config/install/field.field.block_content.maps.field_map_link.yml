@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.maps
+    - field.storage.block_content.field_map_link
+id: block_content.maps.field_map_link
+field_name: field_map_link
+entity_type: block_content
+bundle: maps
+label: 'Map Link'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'AIIMS Campus Rd, AIIMS Campus, Saket Nagar, Habib Ganj, Bhopal, Madhya Pradesh 462026'
+default_value_callback: ''
+settings: {  }
+field_type: string

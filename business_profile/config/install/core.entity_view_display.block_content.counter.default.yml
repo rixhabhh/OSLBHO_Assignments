@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.counter
+    - field.field.block_content.counter.field_counts
+  module:
+    - entity_reference_revisions
+id: block_content.counter.default
+targetEntityType: block_content
+bundle: counter
+mode: default
+content:
+  field_counts:
+    type: entity_reference_revisions_entity_view
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

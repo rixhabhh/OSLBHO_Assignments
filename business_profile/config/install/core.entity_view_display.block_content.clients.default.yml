@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.clients
+    - field.field.block_content.clients.field_client_images
+  module:
+    - image
+id: block_content.clients.default
+targetEntityType: block_content
+bundle: clients
+mode: default
+content:
+  field_client_images:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

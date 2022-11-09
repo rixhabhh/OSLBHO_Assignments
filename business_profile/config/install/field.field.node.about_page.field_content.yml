@@ -1,0 +1,45 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.about_page
+    - paragraphs.paragraphs_type.about_us
+  module:
+    - entity_reference_revisions
+id: node.about_page.field_content
+field_name: field_content
+entity_type: node
+bundle: about_page
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      about_us: about_us
+    negate: 0
+    target_bundles_drag_drop:
+      about_us:
+        weight: 7
+        enabled: true
+      contact:
+        weight: 8
+        enabled: false
+      pricing:
+        weight: 9
+        enabled: false
+      questions_and_answers:
+        weight: 10
+        enabled: false
+      services_element:
+        weight: 11
+        enabled: false
+      topbar_field:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

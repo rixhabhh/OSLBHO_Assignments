@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.services_element.field_body
+    - field.field.paragraph.services_element.field_heading
+    - field.field.paragraph.services_element.field_svg
+    - paragraphs.paragraphs_type.services_element
+  module:
+    - svg_image
+id: paragraph.services_element.default
+targetEntityType: paragraph
+bundle: services_element
+mode: default
+content:
+  field_body:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_svg:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
