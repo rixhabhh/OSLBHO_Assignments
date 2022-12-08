@@ -1,0 +1,22 @@
+{% set display_img_base_class = "display_img" %}
+
+<div {{bem(display_img_base_class)}} >
+
+
+
+	<div {{bem('image',[],display_img_base_class)}} >
+		{% block display_img_image %}
+		{% include "@atoms/images/image/_picture.twig" with {
+			image_src: image_src,
+		}%}
+		{% endblock %}
+	</div>
+
+	<div {{bem('body',[],display_img_base_class)}}>
+		{% include "@atoms/text/headings/_heading.twig" with {
+      		heading_level: 2,
+					heading:heading}%}		
+	</div>
+
+
+</div>

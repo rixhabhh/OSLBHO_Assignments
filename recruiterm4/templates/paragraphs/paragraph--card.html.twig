@@ -1,0 +1,11 @@
+{% embed "@molecules/card/card.twig" with {
+    paragraph_content: paragraph.field_card_body.value,
+    image_src: file_url(content.field_card_image["#items"].entity.field_media_image.entity.uri.url),
+} %}
+
+
+{% block card_button %}
+    {{ content.field_card_button }} 
+{% endblock %}
+
+{% endembed %}

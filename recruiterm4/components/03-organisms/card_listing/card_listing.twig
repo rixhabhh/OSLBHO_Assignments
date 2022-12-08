@@ -1,0 +1,25 @@
+{% set card_listing_base_class = "card_listing" %}
+	<section {{bem(card_listing_base_class)}}>
+    <div {{bem(card_listing_base_class,['overlay'])}}>
+    </div>
+{% set card_container_base_class = "card_container" %}
+    <div {{bem(card_container_base_class)}}>
+      <div {{bem(card_container_base_class,['head'])}}>
+        {% include "@atoms/text/headings/_heading.twig" with {
+          heading: heading1,
+			    heading_level: 4,}%}
+      </div>
+
+      <div {{bem(card_container_base_class,['body'])}}>
+		    {% block items %}
+		    	{% for item in items %}
+		    		{% include "@molecules/card/card.twig" with {
+              image_src: item.image_src1,
+              button_content: item.button_content1,
+              paragraph_content: item.paragraph_content1,
+            }%}			
+		    	{% endfor %}
+		    {% endblock %}
+      </div>  
+    </div>
+	</section>

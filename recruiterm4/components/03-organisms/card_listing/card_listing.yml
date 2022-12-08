@@ -1,0 +1,13 @@
+heading1: 'We bring our candidates and clients all the way to the finish-line'
+
+items:
+  - image_src1: 'https://placeimg.com/345/200/people'
+    button_content1: 'Leadership Training'
+    paragraph_content1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+  - image_src1: 'https://placeimg.com/345/200/people'
+    button_content1: 'Leadership Training'
+    paragraph_content1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+  - image_src1: 'https://placeimg.com/345/200/people'
+    button_content1: 'Leadership Training'
+    paragraph_content1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+

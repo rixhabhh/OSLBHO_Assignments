@@ -1,0 +1,12 @@
+{% embed "@molecules/features_2/features_2.twig" with {
+    heading: content.field_features_2_title,
+    paragraph_content: content.field_features_2_body,
+}%}
+
+{% block features_1_image %}	
+	{{content.field_features_2_image}}
+{% endblock %}
+
+{% endembed %}
+
+

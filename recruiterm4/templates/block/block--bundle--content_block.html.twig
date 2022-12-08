@@ -1,0 +1,13 @@
+{% embed "@organisms/contact/contact.twig" with {
+    heading: content.field_contact_title,
+    paragraph_content: content.field_contact_body,
+    contact_card_img: file_url(content.field_contact_card_image["#items"].entity.field_media_image.entity.uri.url),
+    contact_card_body: content.field_contact_card_body,
+    contact_card_modifiers: "contact_card",
+}%}
+
+{% endembed %}
+
+
+
+

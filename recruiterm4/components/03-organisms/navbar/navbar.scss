@@ -1,0 +1,264 @@
+.navbar{
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 100%;
+  overflow-y: scroll;
+
+  &__top_menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+
+  &__bottom_menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  &__bottom_right{
+    ul{
+      float: left;
+      display: flex;
+      flex-direction: row;
+
+      li>a{
+        background-color: white;
+        color: black;
+      }
+
+      li>a:hover{
+        color: gray;
+        background-color: white;
+      }
+
+    }
+  }
+  &__left_menu,&__mid_menu,&__right_menu{
+    display: flex;
+    flex-direction: column;
+    p{
+      font-size: 1rem;
+      line-height: 2;
+      text-decoration: none;
+      color: black;
+      transition: color 0.6s;
+    }
+    a{
+      font-size: 0.9rem;
+      line-height: 2;
+      text-decoration: none;
+      color: black;
+      transition: color 0.6s;
+
+    }
+
+    a:hover{
+      color: grey;
+    }
+  }
+}
+
+
+main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.logo>h2{
+  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.logo,
+.content {
+  color: black;
+}
+
+.nav {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  // top: 9%;
+  height: 75px;
+  padding-left: 19%;
+  padding-right: 19%;
+}
+
+.logo,
+#hamburger {
+  margin: 2%;
+}
+
+#hamburger {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.25s linear;
+  width: clamp(1.5rem, 2vw + 1.1rem, 6rem);
+  height: clamp(1rem, 1.4vw + 1.7rem, 1rem);
+  display: flex;
+  align-items: center;
+}
+
+#hamburger:hover {
+  opacity: 1;
+}
+
+#hamburger div,
+#hamburger div:after,
+#hamburger div:before {
+  background-color: black;
+  border-radius: 10px;
+  width: 30px;
+  height: 3px;
+  transition: all 0.15s linear;
+}
+
+#hamburger div:before,
+#hamburger div:after {
+  content: "";
+  position: absolute;
+}
+
+#hamburger div:before {
+  transform: translateY(-200%);
+}
+
+#hamburger div:after {
+  transform: translateY(200%);
+}
+
+#hamburger.open div {
+  background: transparent;
+}
+
+#hamburger.open div:before {
+  transform: rotate(45deg);
+}
+
+#hamburger.open div:after {
+  transform: rotate(-45deg);
+}
+
+#overlay {
+  position: fixed;
+  width: inherit;
+  background-color: white;
+  z-index: 1;
+  transform: translateY(-100%);
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50%;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  // overflow-y: scroll;
+}
+
+#overlay.menu {
+  transform: translateY(0%);
+  // margin-top: -180px;
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1280px) {
+.navbar{
+  width: inherit;
+  margin-left: 10%;
+  margin: auto;
+  padding-left: 20%;
+
+  &__top_menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+
+  &__bottom_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+}
+.nav {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#overlay {
+  min-width: 100%;
+}
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .navbar{
+    width: fit-content;
+
+    &__top_menu{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    &__bottom_menu{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+
+  }
+  .nav {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  #overlay {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .navbar{
+    width: fit-content;
+
+    &__top_menu{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    &__bottom_menu{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+    
+
+  }
+  .nav {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #overlay {
+    min-width: 100%;
+  }
+}

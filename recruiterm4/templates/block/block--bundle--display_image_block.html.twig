@@ -1,0 +1,8 @@
+{% embed "@molecules/display_img/display_img.twig" with {
+    heading: content.field_display_image_body,
+    image_src: file_url(content.field_display_image_image["#items"].entity.field_media_image.entity.uri.url),
+}%}
+
+{% endembed %}
+
+

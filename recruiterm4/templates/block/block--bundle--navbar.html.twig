@@ -1,0 +1,68 @@
+
+{% set iconarray = [] %}
+{% for key,data in content.field_navbar_social_links %}
+    {% if key >= 0 %}
+        {% set iconname = content.field_navbar_social_links[key]['#title'] %}
+        {% set iconurl = content.field_navbar_social_links['#items'][key].uri %}
+        {% set iconarray = iconarray|merge([
+            {
+                'url' : iconurl,
+                'icon' : iconname,
+            }
+        ]) %}
+    {% endif %}
+{% endfor %}
+
+  {% set list = [] %}
+  {% set listitem = [] %}
+    {% for links in content.field_navbar_links_para %} 
+    {% if links["#paragraph"] %} 
+      {% for key,value in links["#paragraph"].field_navbar_link_title %}
+        {% if key >= 0 %}
+            {% set listcontent = links["#paragraph"].field_navbar_link_title[key].value %}
+                {% set list = list|merge([
+                    {
+                        listcontent,
+                    }
+                ]) %}
+        {% endif %}
+      {% endfor %}
+
+      {% for key,value in links["#paragraph"].field_navbar_links %}
+        {% if key >= 0 %}
+            {% set listcontent1 = links["#paragraph"].field_navbar_links[key].value %}
+                {% set listitem = listitem|merge([
+                    {
+                        'link__text': listcontent1.title,
+                    }
+                ]) %}
+        {% endif %}
+      {% endfor %}
+
+    {% endif %}
+    {% endfor %} 
+
+{# {{dd(listitem)}} #}
+{% embed "@organisms/navbar/navbar.twig" with {
+    heading: content.field_navbar_logo,
+    privacy: content.field_navbar_copyright,
+    social_menu_items: iconarray,
+    paragraph_content_left: list[0].listcontent,
+    paragraph_content_mid: list[1].listcontent,
+    paragraph_content_right: list[2].listcontent,
+    links_left: listitem,
+    links_mid: listitem,
+    links_right: listitem,
+}%}
+
+
+
+{% endembed %} 
+
+
+
+
+
+
+
+

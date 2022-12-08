@@ -1,0 +1,25 @@
+{% set card_base_class = "card" %}
+
+<div {{bem(card_base_class,card_modifiers)}} id="card">
+  <div {{bem(card_base_class,['wrapper'])}} >
+	<div {{bem(card_base_class,['image'])}} >
+		{% block card_image %}	
+		{% include "@atoms/images/image/_picture.twig" with {
+			image_src: image_src,
+		}%}
+		{% endblock %}
+	</div>
+
+	<div {{bem(card_base_class,['body'])}}>
+		{% include "@atoms/text/text/01-paragraph.twig" with {
+      		paragraph_content: paragraph_content,}%}		
+	</div>
+
+	<div {{bem(card_base_class,['button'])}}>
+{% block card_button %}	
+		{% include "@atoms/buttons/button.twig" with {
+			button_content: button_content}%}
+{% endblock %}
+	</div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+recruiterm4.small:
+  label: small
+  mediaQuery: 'all and (min-width: 25em)'
+recruiterm4.small-med:
+  label: small-med
+  mediaQuery: 'all and (min-width: 26em)'
+recruiterm4.small-large:
+  label: small-large
+  mediaQuery: 'all and (min-width: 41em)'
+recruiterm4.medium:
+  label: medium
+  mediaQuery: 'all and (min-width: 48em)'
+recruiterm4.large:
+  label: large
+  mediaQuery: 'all and (min-width: 61.25em)'

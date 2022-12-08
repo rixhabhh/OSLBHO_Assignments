@@ -1,0 +1,133 @@
+@mixin make-container {
+  max-width: 1320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 16px 100px;
+}
+
+.footer {
+
+  background-color: #98dee8;
+  
+  &__container{
+    @include make-container();
+  }
+    
+  &__heading{
+    text-align: center;
+
+    h2{
+    font-family: 'Brygada 1918', serif;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    }
+  }
+
+  &__row_1,&__row_2{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    p{
+      color: black;
+    }
+  }
+
+  &__content_b,&__privacy{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    p{
+    cursor: pointer;
+    }
+  }
+  
+  &__social{
+    ul{
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+.social-menu__link{
+  margin-right: 1.25rem;
+  border-radius: 50%;
+  color: #98dee8;
+  background: #40b0bf;
+  font-size: 1rem;
+  transition: background 0.3s linear;
+  height: 40px;
+  width: 40px;
+
+  .social-menu__icon {
+    height: 23px;
+    margin: auto;
+  }
+
+  &:hover {
+    background-color: #238794;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  
+  .footer {
+    
+    &__container{
+      max-width: max-content;
+    }
+
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .footer {
+    
+    &__container{
+      max-width: max-content;
+    }
+      
+  
+    &__row_1,&__row_2{
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    &__content_b,&__privacy{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+  }
+}
+
+
+@media (max-width: 575px) {
+  .footer {
+    
+    &__container{
+      max-width: max-content;
+    }
+      
+  
+    &__row_1,&__row_2{
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    &__content_b,&__privacy{
+      display: flex;
+      flex-direction: column;
+
+    }
+
+  }
+}

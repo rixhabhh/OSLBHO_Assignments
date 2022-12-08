@@ -1,0 +1,26 @@
+{% set iconarray = [] %}
+{% for key,data in content.field_footer_social_links %}
+    {% if key >= 0 %}
+        {% set iconname = content.field_footer_social_links[key]['#title'] %}
+        {% set iconurl = content.field_footer_social_links['#items'][key].uri %}
+        {% set iconarray = iconarray|merge([
+            {
+                'url' : iconurl,
+                'icon' : iconname,
+            }
+        ]) %}
+    {% endif %}
+{% endfor %}
+
+{% embed "@organisms/footer/footer.twig" with {
+    heading: content.field_footer_title,
+    paragraph_content_a: content.field_footer_body_left,
+    paragraph_content_b: content.field_footer_body_right,
+    privacy: content.field_footer_privacy,
+    social_menu_items1: iconarray,
+}%}
+{% endembed %}
+
+
+
+

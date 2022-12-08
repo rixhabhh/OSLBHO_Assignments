@@ -1,0 +1,29 @@
+{% set heropage_base_class = "heropage" %}
+{% set heropage_image_base_class = "heropage_image" %}
+{% set heropage_content_base_class = "heropage_content" %}
+
+<section {{bem(heropage_base_class)}} >
+ <div {{bem(heropage_base_class,['overlay'])}}>
+ </div>
+
+ <div {{bem(heropage_base_class,['main_content'])}}>	
+	<div {{bem(heropage_image_base_class)}} >
+		{% block heropage_image %}	
+		{% include "@atoms/images/image/_picture.twig" with {
+			image_src: image_src,
+		}%}
+		{% endblock %}
+	</div>
+
+	<div {{bem(heropage_content_base_class)}} >
+		<div {{bem(heropage_content_base_class,['content'])}}>	
+		{% include "@atoms/text/headings/_heading.twig" with {
+      heading: heading,
+			heading_level: 1,}%}
+
+		{% include "@atoms/text/text/01-paragraph.twig" with {
+      paragraph_content: paragraph_content,}%}		
+		</div>
+	</div>
+ </div>
+</section>

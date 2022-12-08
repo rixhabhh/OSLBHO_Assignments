@@ -1,0 +1,44 @@
+.products{
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &--wrapper{
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  &--card_box{
+    background: #47a15d;
+    width: 155px;
+    height: 155px;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+    color: #868378;
+    transition: all 0.1s;
+    text-align: center;
+
+    picture{
+      font-size: 4rem;
+      color: #fff;
+      position: absolute;
+      transition: all 0.3s;
+
+      img{
+        height: 70px;
+        height: 70px;
+        filter: invert(1);
+      }
+    }
+  }
+}

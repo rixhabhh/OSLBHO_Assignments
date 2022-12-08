@@ -1,0 +1,66 @@
+privacy: 'Copyright 2025 Mobirise <br>
+          - All Rights Reserved'
+
+social_menu_items:
+  - url: '#'
+    icon: 'twitter'
+  - url: '#'
+    icon: 'facebook'
+  - url: '#'
+    icon: 'instagram'
+
+heading: 'RecruiterM4'
+
+paragraph_content_left: 'Neighbourhoods'
+
+links_left:
+  - link__text: Adams Morgan
+    link__url: https://emulsify.info/
+
+  - link__text: Anacostia
+    link__url: https://emulsify.info/
+
+  - link__text: Brookland
+    link__url: https://emulsify.info/
+
+  - link__text: Capitol Hill
+    link__url: https://emulsify.info/
+
+  - link__text: Caitol Riverfront
+    link__url: https://emulsify.info/
+
+paragraph_content_mid: 'Neighbourhoods'
+
+links_mid:
+  - link__text: Adams Morgan
+    link__url: https://emulsify.info/
+
+  - link__text: Anacostia
+    link__url: https://emulsify.info/
+
+  - link__text: Brookland
+    link__url: https://emulsify.info/
+
+  - link__text: Capitol Hill
+    link__url: https://emulsify.info/
+
+  - link__text: Caitol Riverfront
+    link__url: https://emulsify.info/
+
+paragraph_content_right: 'Neighbourhoods'
+
+links_right:
+  - link__text: Adams Morgan
+    link__url: https://emulsify.info/
+
+  - link__text: Anacostia
+    link__url: https://emulsify.info/
+
+  - link__text: Brookland
+    link__url: https://emulsify.info/
+
+  - link__text: Capitol Hill
+    link__url: https://emulsify.info/
+
+  - link__text: Caitol Riverfront
+    link__url: https://emulsify.info/

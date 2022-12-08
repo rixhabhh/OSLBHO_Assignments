@@ -1,0 +1,30 @@
+{% set features_base_class = "features_4" %}
+
+<section {{bem(features_base_class)}} >
+ <div {{bem(features_base_class,['overlay'])}}>
+ </div>
+
+ <div {{bem('main_content',[],features_base_class)}}>	
+
+		<div {{bem('col_1',[],features_base_class)}}>
+
+		{% include "@atoms/text/headings/_heading.twig" with {
+      heading: heading,
+			heading_level: 6,}%}
+
+		{% include "@atoms/text/text/01-paragraph.twig" with {
+    paragraph_content: paragraph_content,}%}
+
+		</div>
+
+    <div {{bem('col_2 ',[],features_base_class)}}>
+
+		{% block features_1_image %}	
+			{% include "@atoms/images/image/_picture.twig" with {
+				image_src: image_src,
+			}%}
+		{% endblock %} 
+		</div>	
+
+ </div>
+</section>

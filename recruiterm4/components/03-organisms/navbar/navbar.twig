@@ -1,0 +1,77 @@
+{{ attach_library('recruiterm4/status') }}
+
+{% set navbar__base_class = 'navbar' %}
+<main >
+  <div id="overlay" >
+    <div {{bem(navbar__base_class)}}>
+     
+     <div {{ bem('top_menu', [], navbar__base_class) }}>
+ {% block navbar_links %}
+      <div {{ bem('left_menu', [], navbar__base_class) }}>
+        {% include "@atoms/text/text/01-paragraph.twig" with {
+      	paragraph_content: paragraph_content_left,}%}
+
+        {% for link_left in links_left %}
+          {% include "@atoms/links/link/link.twig" with {
+          link_content: link_left.link__text,
+          link_url: link_left.link__url,
+        }%}
+        {% endfor %}
+      </div>
+
+      <div {{ bem('mid_menu', [], navbar__base_class) }}>
+        {% include "@atoms/text/text/01-paragraph.twig" with {
+      	paragraph_content: paragraph_content_mid,}%}
+
+        {% for link_mid in links_mid %}
+          {% include "@atoms/links/link/link.twig" with {
+          link_content: link_mid.link__text,
+          link_url: link_mid.link__url,
+        }%}
+        {% endfor %}
+      </div>
+
+      <div {{ bem('right_menu', [], navbar__base_class) }}>
+        {% include "@atoms/text/text/01-paragraph.twig" with {
+      	paragraph_content: paragraph_content_right,}%}
+
+        {% for link_right in links_right %}
+          {% include "@atoms/links/link/link.twig" with {
+          link_content: link_right.link__text,
+          link_url: link_right.link__url,
+        }%}
+        {% endfor %}
+      </div>
+{% endblock %}
+
+     </div>
+
+     <div {{ bem('bottom_menu', [], navbar__base_class) }}>
+
+      <div {{ bem('bottom_left', [], navbar__base_class) }}>
+      	{% include "@atoms/text/text/01-paragraph.twig" with {
+      	paragraph_content: privacy,}%}
+      </div>
+
+     <div {{ bem('bottom_right', [], navbar__base_class) }}>
+        {% block footer__social %}
+          {% include "@molecules/menus/social/social-menu.twig" with {
+            social_menu_items: social_menu_items,}%}
+        {% endblock %}
+      </div>
+     </div>
+
+    </div>
+  </div>
+  <div class="nav">
+    <div id="hamburger">
+      <div></div>
+    </div>
+    <div class="logo">
+      {% include "@atoms/text/headings/_heading.twig" with {
+        heading: heading,
+        heading_level: 2,
+      } %}
+      </div>
+  </div>
+</main>

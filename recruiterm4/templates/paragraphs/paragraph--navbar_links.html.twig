@@ -1,0 +1,17 @@
+ {% embed "@organisms/navbar/navbar.twig" with {
+    paragraph_content_mid: paragraph.field_navbar_link_title.value,
+    links_mid: paragraph.field_navbar_links.value,
+
+            
+
+}%}
+
+{% block navbar_links %}
+    {% for key in paragraph.field_navbar_links|keys %}
+    {% endfor %}
+{% endblock %}
+{% endembed %} 
+
+
+
+

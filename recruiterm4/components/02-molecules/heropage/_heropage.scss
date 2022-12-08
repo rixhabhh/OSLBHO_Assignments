@@ -1,0 +1,133 @@
+@mixin make-container {
+    max-width: 1320px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 16px;
+  }
+
+section{
+    padding-top: 6rem;
+    // padding-bottom: 3rem;
+    background-image: url(https://mobirise.com/extensions/recruiterm4/agency/assets/images/dots.svg);
+    background-repeat: repeat;
+    background-size: 30px 30px;
+    position: relative;
+    word-wrap: break-word;
+    display: block;
+
+}
+.heropage{
+
+    &--overlay{
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 0;
+        pointer-events: none;
+        opacity: 0.8;
+        background-color: rgb(255, 255, 255);
+    }
+
+    &--main_content{
+        @include make-container();
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        word-wrap: break-word;
+        padding: 100px;
+    }
+}
+
+.heropage_image{
+    min-height: 650px;
+    height: 100%;
+
+    picture{
+    min-height: 650px;
+    height: 100%;
+    }
+
+    img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    }
+}
+
+.heropage_content{
+
+    &--content{
+        padding: 6rem 3.25rem;
+        transform: translate(-12%, -5rem);
+        width: 100%;
+        background: #98dee8;
+
+        & h1,p{
+            color: black;
+            font-weight: lighter;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    .heropage{
+      
+      &--main_content{
+          max-width: 720px;
+          display: flex;
+          flex-direction: column;
+      }
+    }
+    .heropage_content{
+        margin-top: -155px;
+        &--content{
+            transform: none;
+            // padding-top: 0rem;
+        }
+    }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+    .heropage{
+      
+      &--main_content{
+          max-width: 540px;
+          display: flex;
+          flex-direction: column;
+      }
+    }
+    .heropage_content{
+        margin-top: -220px;
+        &--content{
+            transform: none;
+            h1{
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .heropage{
+      
+      &--main_content{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+      }
+    }
+    .heropage_content{
+        margin-top: -220px;
+
+        &--content{
+            transform: none;
+            padding-top: 0.5rem;
+
+            h1{
+                font-size: 2.5rem;
+            }
+        }
+    }
+}

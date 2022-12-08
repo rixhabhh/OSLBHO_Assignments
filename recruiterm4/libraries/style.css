@@ -1,0 +1,17 @@
+.main{
+    max-width: 1950px !important;
+    padding: 0 !important;
+    margin: 0;
+}
+.layout-container{
+    padding: 0 !important;
+    margin: 0;  
+}
+
+.main>section{
+    max-width: 1920px;
+}
+
+.feed-icon{
+    display: none;
+}

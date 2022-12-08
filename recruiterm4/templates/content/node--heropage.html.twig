@@ -1,0 +1,9 @@
+{% embed "@molecules/heropage/heropage.twig" with {
+    heading: content.field_heropage_title,
+    paragraph_content: content.field_heropage_body,
+    image_src: file_url(content.field_heropage_picture["#items"].entity.fileuri),
+
+} %}
+
+{% endembed %}
+

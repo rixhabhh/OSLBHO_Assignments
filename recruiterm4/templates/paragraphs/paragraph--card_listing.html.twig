@@ -1,0 +1,9 @@
+{% embed "@organisms/card_listing/card_listing.twig" with {
+    heading1: paragraph.field_cards_listing_title.value,
+
+}%} 
+{% block items %}
+  {{ content.field_card }}
+{% endblock %}
+{% endembed %} 
+

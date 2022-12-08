@@ -1,0 +1,98 @@
+@mixin make-container {
+    max-width: 1320px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 16px;
+  }
+
+.features_4{
+
+    &--overlay{
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 0;
+        pointer-events: none;
+        opacity: 0.8;
+        background-color: rgb(255, 255, 255);
+    }
+
+    &__main_content{
+        @include make-container();
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 16px;
+        padding-right: 16px;
+        position: relative;
+        word-wrap: break-word;
+        max-width: 1140px;
+    }
+
+    &__col_1{
+        padding-right: 2.25rem;
+        padding-left: 0;
+        text-align: left;
+
+        h6{
+            font-family: 'Brygada 1918', serif;
+            font-size: 4.4rem;
+            line-height: 1;
+            font-weight: lighter;
+        }
+
+        p {
+            font-family: 'Brygada 1918', serif;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+    }
+
+    &__col_2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    img{
+    width: 298px;
+    height: 298px;
+    object-fit: cover;
+    border-radius: 50%;
+    }
+}
+}
+
+#block-features4{
+    margin-top: 20px;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .features_4{   
+        &__main_content{
+            max-width: 576px;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+      }
+
+
+}
+
+@media (max-width: 575px) {
+    .features_4{   
+        &__main_content{
+            max-width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+      
+
+    &__col_2{
+        h2{
+        font-size: 3rem;
+        }
+
+}
+}
+}

@@ -1,0 +1,23 @@
+{% set products_base_class = "products" %}
+
+<div class="wow fadeInUp" data-wow-duration="2s" {{bem(products_base_class)}}>
+  <div {{bem(products_base_class,['wrapper'])}}>
+    <div {{bem(products_base_class,['card_box'])}}>
+      {% include "@atoms/images/image/responsive-image.twig" with {
+      image_src: svg_icon,
+      } %}
+    </div>
+  </div>
+  <div {{bem(products_base_class,['data'])}}>
+    {% include "@atoms/text/headings/_heading.twig" with {
+      heading: heading,
+			heading_level: 4,}
+    %}
+  </div>
+</div>
+
+{% block Javascript %}
+<script type="text/javascript">
+  new WOW().init();
+</script>
+{% endblock %}
